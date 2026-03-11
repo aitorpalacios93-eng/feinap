@@ -1,0 +1,1948 @@
+<!DOCTYPE html><html class="html5" xml:lang="es-ES" lang="es-ES" xmlns="http://www.w3.org/1999/xhtml"><head>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+            <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <link type="text/css" class="keepscript" rel="stylesheet" href="https://jobs.mediapro.tv/platform/bootstrap/3.4.8_NES/css/bootstrap.min.css">
+                            <link type="text/css" rel="stylesheet" href="/platform/css/j2w/min/bootstrapV3.global.responsive.min.css?h=47df3f59">
+                <script type="text/javascript" src="https://performancemanager.successfactors.eu/verp/vmod_v1/ui/extlib/jquery_3.5.1/jquery.js"></script>
+                <script type="text/javascript" src="https://performancemanager.successfactors.eu/verp/vmod_v1/ui/extlib/jquery_3.5.1/jquery-migrate.js"></script>
+            <script type="text/javascript" src="/platform/js/jquery/jquery-migrate-1.4.1.js"></script>
+            <title>Ofertas - Bolsa de trabajo | Mediapro</title>
+
+    <meta name="description">
+    <meta name="title" content="Ofertas - Bolsa de trabajo | Mediapro">
+    <meta name="keywords">
+
+    <meta prefix="og: http://ogp.me/ns#" property="og:title" content="Ofertas - Bolsa de trabajo | Mediapro">
+    <meta prefix="og: http://ogp.me/ns#" property="og:description">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Ofertas - Bolsa de trabajo | Mediapro">
+    <meta name="twitter:description">
+            <meta property="og:image" content="https://rmkcdn.successfactors.com/e3724507/a682be27-48c9-42c9-a220-7.jpg">
+            <meta property="twitter:image" content="https://rmkcdn.successfactors.com/e3724507/a682be27-48c9-42c9-a220-7.jpg">
+                <link type="text/css" rel="stylesheet" href="//rmkcdn.successfactors.com/e3724507/b9e27b98-f038-4c05-b979-e.css">
+                            <link type="text/css" rel="stylesheet" href="/platform/csb/css/header1.css?h=47df3f59">
+                            <link type="text/css" rel="stylesheet" href="/platform/css/j2w/min/sitebuilderframework.min.css?h=47df3f59">
+                            <link type="text/css" rel="stylesheet" href="/platform/css/j2w/min/BS3ColumnizedSearch.min.css?h=47df3f59">
+                            <link type="text/css" rel="stylesheet" href="/platform/fontawesome4.7/css/font-awesome-4.7.0.min.css?h=47df3f59"><script type="text/javascript"></script>
+
+<link href="https://unpkg.com/swiper@7/swiper-bundle.min.css" rel="stylesheet">
+<style>
+
+.jobDisplay .applylink .dialogApplyBtn,
+#savesearch-link {
+   font-size:1rem;
+}
+
+.job h1,
+.job h2,
+.job h3,
+.job h4,
+.job h5 {
+    font-weight: bold;
+    font-family: 'customb139a295a8ad436eafb45';
+}
+
+.job h1 {
+    font-size: 1.8rem !important;
+}
+
+.job h2 {
+    font-size: 1.4rem !important;
+}
+
+.job .inner {
+     font-size: 1.1rem !important;
+}
+
+.job-page #content .back-to-search-wrapper {
+    display: none;
+}
+
+#search-wrapper #moreOptionsDiv {
+    width: 100% !important;
+    top:96px;
+    left:0px;
+}
+
+#optionsFacetValues hr {
+     margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    border-top: 1px solid #ddd !important;
+}
+
+#newFacets label {
+    padding-left:10px !important;
+}
+
+#newFacets select {
+     padding: .3rem 1.5rem .3rem .8rem
+}
+
+#search-wrapper .container-fluid {
+     position: relative !important;
+}
+
+#search-wrapper .searchwell {
+    background-color: #f2f2f2;
+    padding: 3rem 0;
+   
+}
+
+#search-wrapper input {
+       border: 1px solid #e7e7e7!important;
+    background: #FFF;
+}
+
+#search-wrapper input[type="submit"] {
+  border-radius: 2rem;
+    padding: 6px 16px;
+}
+
+#search-wrapper .searchwell .jobAlertsSearchForm{
+    max-width: 1000px;
+    margin: 0 auto !important;
+}
+
+#search-wrapper > .row {
+ margin: 0 auto;
+    justify-content: space-between;
+    max-width: 1000px;
+}
+
+#search-wrapper .searchwell .row > *:not([class^="col-"]) {
+    padding-left:0;
+    padding-right:0;
+}
+
+#category-header {
+   display:none
+}
+#nav-collapse-design1 {
+    text-align: center;
+    top: 95%;
+    font-family: customb139a295a8ad436eafb45, sans-serif;
+} 
+
+.profileWidget {
+     width: auto !important;
+    padding: 0.4rem 1rem !important;
+} 
+
+#header {
+    max-width: 100%;
+}
+
+#header .lower {
+   font-size: 1rem !important;
+    padding-top: 0 !important;
+    padding-bottom: 1rem !important;
+}
+
+#header .menu.desktop .nav {
+   margin-top: 0;
+}
+
+#header .menu.desktop .nav > li {
+     padding: 0 !important;
+}
+
+.menu.desktop.upper .logo {
+    margin-top:0 !important;
+}
+
+#footer {
+   display:none;
+}
+
+.limitwidth {
+    background-color: #0d0200!important;
+    font-family: custom1b6cfd63364946978357e !important;
+    font-weight: bold;
+}
+
+#innershell,
+.inner {
+    max-width: 100% !important;    
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+body.careerUserLoggedIn  #innershell {
+      max-width: 1200px !important; 
+}
+
+body.careerUserLoggedIn  #outershell{
+      padding-bottom: 50px !important; 
+}
+#content {
+    padding-top: 0 !important;
+}
+
+#innershell,
+#innershell .inner {
+  background: #FFFFFF;
+}
+
+#header .inner {
+    padding: 0 3rem !important;
+}
+
+#content > .inner > div {
+ margin-bottom: 0;
+}
+
+html body.coreCSB, body {
+    font-size: 1rem !important; 
+   line-height: 1.5 !important;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Gotham', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+body {
+    font-family: 'Gotham', sans-serif;
+    font-weight: 400;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/*****************
+ * Fonts
+ *****************/
+
+.ff-bold {
+    font-family: 'customb139a295a8ad436eafb45', sans-serif;
+}
+
+.ff-italic {
+    font-family: 'Gotham Book', sans-serif;
+}
+
+.ff-semi-bold {
+    font-weight: 600;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+
+/*****************
+ * Colors
+ *****************/
+
+.grey-color {
+    color: #696969 !important; 
+}
+
+.orange-color {
+    color: #fe3817 !important;
+}
+
+.orange-secondary-color {
+    color: #ff4e31 !important;
+}
+
+.orange-light-color {
+    color: #f69282 !important;
+}
+
+.text-white {
+    color: #ffffff !important;
+}
+
+/*****************
+ * Buttons
+ *****************/
+
+
+.btn-orange {
+    background: #ff4b30;
+    border: 0;
+    border-radius: 1rem;
+}
+
+.btn-orange:hover,
+.btn-orange:active,
+.btn-orange:focus {
+    box-shadow: 0 0 0 0.25rem rgb(255 75 48 / 50%) !important;
+    background-color: rgba(222,48,21,255)  !important;
+    border: 0 !important;
+}
+
+#body .outershell .btn:focus {
+     border: 0 !important;
+}
+
+/*****************
+ * Inputs
+ *****************/
+
+input[type="text"]:focus,
+input[type="text"] {
+    border-radius: 3rem;
+    padding: .375rem 1.2rem;
+    background-color: #e7e7e7;
+    color: #6c6a6b;
+    border: 0;
+}
+
+input[type="text"]:focus {
+    box-shadow: 0 0 0 0.25rem rgb(231 231 231 / 50%);
+}
+
+/*****************
+ * Helpers
+ *****************/
+.align-items-center {
+    align-items: center!important;
+}
+
+.justify-content-center {
+    justify-content: center!important;
+}
+
+.pb-5 {
+    padding-bottom: 3rem!important;
+}
+
+.py-5 {
+    padding-top: 3rem!important;
+    padding-bottom: 3rem!important;
+}
+
+.py-4 {
+    padding-top: 1.5rem!important;
+    padding-bottom: 1.5rem!important;
+}
+
+.pt-3 {
+    padding-top: 1rem!important;
+}
+
+.mt-3 {
+    margin-top: 1rem!important;
+}
+
+.my-4 {
+    margin-top: 1.5rem!important;
+    margin-bottom: 1.5rem!important;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem!important;
+}
+
+.mt-5 {
+    margin-top: 3rem!important;
+}
+
+.my-5 {
+    margin-top: 3rem!important;
+    margin-bottom: 3rem!important;
+}
+
+.fs-5 {
+    font-size: 1.25rem!important;
+}
+
+.fs-2 {
+    font-size: calc(1.325rem + .9vw)!important;
+}
+
+.fs-1 {
+    font-size: calc(1.375rem + 1.5vw)!important;
+}
+
+.position-relative {
+    position: relative!important;
+}
+
+.position-absolute {
+    position: absolute!important;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/*****************
+ * Bootstrap
+ *****************/
+
+.h2, h2 {
+    font-size: calc(1.325rem + .9vw);
+}
+
+.btn-group-vertical>.btn-group:after, .btn-group-vertical>.btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .modal-header:after, .modal-header:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
+    display: none;
+    content: "";
+}
+
+.row {
+    --bs-gutter-x:1.5rem;
+    --bs-gutter-y:0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+.col-* {
+       flex: 0 0 auto;
+}
+
+.row > * {
+    flex-shrink: 0;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+    /*padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+    width: 100%;*/
+
+}
+
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1320px;
+        width: 100% !important;
+           padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+
+    }
+
+    .col-xxl-9 {
+        flex: 0 0 auto;
+        width: 85%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .fs-2 {
+        font-size: 2rem!important;
+    }
+
+    .fs-1 {
+        font-size: 2.5rem!important;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .row > * {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .py-md-5 {
+        padding-top: 3rem!important;
+        padding-bottom: 3rem!important;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu.mobile {
+          background-color:#000000;
+    }
+
+    .menu.mobile .mobile-search {
+           display: none;
+           visibility: hidden;
+    }
+    .menu.mobile .nav {
+           margin-top: 0.5rem;
+           margin-right: 0.5rem;
+    }
+}
+
+@media (max-width: 1024px) {
+   .row {
+         --bs-gutter-x: 0;
+    }
+}
+
+body.careerUserLoggedIn .row {
+      display: block !important;
+    --bs-gutter-x: 0 !important;
+    flex-wrap: nowrap !important;
+}
+
+body.careerUserLoggedIn  .rcmAppBtnWrapper.appliedJobBtnWrapper {
+    clear: both;
+    margin-top: 20px;
+}
+
+body.careerUserLoggedIn  .pagetitle {
+  float: none !important;
+}
+</style>
+
+        <link rel="shortcut icon" href="//rmkcdn.successfactors.com/e3724507/f89def36-bc27-4415-b430-8.png" type="image/x-icon">
+            
+            <script type="text/javascript" id="antiClickJackScript">
+                if (self === top) {
+                    var antiClickjack = document.getElementById("antiClickjack");
+                    antiClickjack.parentNode.removeChild(antiClickjack);
+                } else {
+                    top.location = self.location;
+                }
+            </script>
+        </head>
+
+        <body class="coreCSB home-page body   body" id="body">
+
+        <div id="outershell" class="outershell">
+
+    <div id="header" class="header headermain slightlylimitwidth " role="banner">
+            <h1 style="font-size: 0px; margin: 0px;">Ofertas - Bolsa de trabajo | Mediapro</h1>
+            <div id="headerbordertop" class="headerbordertop slightlylimitwidth"></div>
+        <script type="text/javascript">
+            //<![CDATA[
+            $(function()
+            {
+                /* Using 'skipLinkSafari' to include CSS styles specific to Safari. */
+                if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+                    $("#skipLink").attr('class', 'skipLinkSafari');
+                }
+            });
+            //]]>
+        </script>
+        <div id="skip">
+            <a href="#content" id="skipLink" class="skipLink" title="Saltar al contenido principal"><span>Saltar al contenido principal</span></a>
+        </div>
+
+        <div class="limitwidth">
+            <div class="menu desktop upper">
+                <div class="inner" role="navigation" aria-label="Encabezado Menú">
+                        <a href="/" title="Mediapro" style="display:inline-block">
+                            <img class="logo" src="//rmkcdn.successfactors.com/e3724507/bf335ada-cd6c-4d75-9200-7.png">
+                        </a>
+                    <ul class="nav nav-pills" role="list">
+        <li><a href="/content/Quienes-Somos/?locale=es_ES" title="QUIÉNES SOMOS">QUIÉNES SOMOS</a></li>
+        <li><a href="/empleos/go/empleos/8725802/" title="VER EMPLEOS">VER EMPLEOS</a></li>
+        <li><a href="/talentojunior/go/talento/8725702/" title="TALENTO JUNIOR">TALENTO JUNIOR</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu mobile upper">
+                <a href="/" title="Mediapro">
+                    <img class="logo" src="//rmkcdn.successfactors.com/e3724507/bf335ada-cd6c-4d75-9200-7.png">
+                </a>
+            <div class="nav">
+                    <div class="dropdown mobile-search">
+                        <button id="searchToggleBtn" type="button" title="Buscar" aria-label="Buscar" class="dropdown-toggle" data-toggle="collapse" data-target="#searchSlideNav"><span class="mobilelink fa fa-search"></span></button>
+                        <div id="searchSlideNav" class="dropdown-menu search-collapse">
+
+        <div class="well well-small searchwell">
+            <form class="form-inline jobAlertsSearchForm" name="keywordsearch" method="get" action="/search/" xml:lang="es-ES" lang="es-ES" style="margin: 0;" role="search">
+                <input name="createNewAlert" type="hidden" value="false">
+                <div class="container-fluid">
+                    <div class="row columnizedSearchForm">
+                        <div class="column col-md-9">
+                            <div class="fieldContainer row">
+                                    <div class="col-md-6 rd-keywordsearch">
+                                            <span class="lbl" aria-hidden="true">Buscar por palabra clave</span>
+
+                                        <i class="keywordsearch-icon"></i>
+                                        <input type="text" class="keywordsearch-q columnized-search" name="q" maxlength="50" aria-label="Buscar por palabra clave">
+
+                                    </div>
+                                    <div class="col-md-6 rd-locationsearch">
+                                            <span class="lbl" aria-hidden="true">Buscar por ubicación</span>
+
+                                        <i class="locationsearch-icon"></i>
+                                        <input type="text" class="keywordsearch-locationsearch columnized-search" name="locationsearch" maxlength="50" aria-label="Buscar por ubicación">
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="rd-searchbutton col-md-2">
+                            <div class="row emptylabelsearchspace labelrow">
+                                &nbsp;
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12 search-submit">
+                                            <input type="submit" class="btn keywordsearch-button" value="Buscar ofertas">
+                                </div>
+                                    <div class="search-clear-wrapper">
+                                        <a role="button" href="" class="search-clear-button btn-link">Borrar</a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+                        </div>
+                    </div>
+                <div class="dropdown mobile-nav">
+                    <a id="hamburgerToggleBtn" href="#" title="Menú" aria-label="Menú" class="dropdown-toggle" aria-controls="nav-collapse-design1" aria-expanded="false" role="button" data-toggle="collapse" data-target="#nav-collapse-design1"><span class="mobilelink fa fa-bars"></span></a>
+                    <ul id="nav-collapse-design1" class="dropdown-menu nav-collapse">
+        <li><a href="/content/Quienes-Somos/?locale=es_ES" title="QUIÉNES SOMOS">QUIÉNES SOMOS</a></li>
+        <li><a href="/empleos/go/empleos/8725802/" title="VER EMPLEOS">VER EMPLEOS</a></li>
+        <li><a href="/talentojunior/go/talento/8725702/" title="TALENTO JUNIOR">TALENTO JUNIOR</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="lower headersubmenu">
+            <div class="inner limitwidth">
+                <div class="links">
+                        <div id="langListContainer" class="language node dropdown header-one headerlocaleselector">
+        <a id="langDropDownToggleBtn" class="dropdown-toggle languageselector" role="button" aria-expanded="false" data-toggle="dropdown" href="#" aria-controls="langListDropDown">IDIOMA <span class="caret"></span></a>
+        <ul id="langListDropDown" role="menu" aria-labelledby="langDropDownToggleBtn" class="dropdown-menu company-dropdown headerdropdown">
+                <li role="none">
+                    <a role="menuItem" href="https://jobs.mediapro.tv/?locale=ca_ES" lang="ca-ES">Català (Espanya)</a>
+                </li>
+                <li role="none">
+                    <a role="menuItem" href="https://jobs.mediapro.tv/?locale=en_US" lang="en-US">English (United States)</a>
+                </li>
+                <li role="none">
+                    <a role="menuItem" href="https://jobs.mediapro.tv/?locale=es_ES" lang="es-ES">Español (España)</a>
+                </li>
+                <li role="none">
+                    <a role="menuItem" href="https://jobs.mediapro.tv/?locale=pt_PT" lang="pt-PT">Português (Portugal)</a>
+                </li>
+        </ul>
+                        </div>
+                        <div class="profile node">
+			<div class="profileWidget">
+					<a href="#" onclick="j2w.TC.handleViewProfileAction(event)" xml:lang="es-ES" lang="es-ES" style=" ">ACCESO</a>
+			</div>
+                        </div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <style type="text/css">
+        #content {
+            padding-top: 15px;
+        }
+    </style>
+
+    <script type="text/javascript" classhtmlattribute="keepscript" src="/platform/js/j2w/j2w.bootstrap.collapse.js"></script>
+    <script type="text/javascript" classhtmlattribute="keepscript" src="/platform/js/j2w/j2w.bootstrap.dropdown.js"></script>
+            <div id="innershell" class="innershell">
+                <div id="content" tabindex="-1" class="content" role="main">
+                    <div class="inner">
+
+    <div class="customPlugin customPlugin-2bf7d38be49ae086 displayDTM">
+        <div class="inner"><style>
+.home__header {
+    height: calc(100vh - 111px);
+    background-image: url("https://rmkcdn.successfactors.com/e3724507/bb27fc77-f1fd-492c-bb53-f.jpg");
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.home__header .arrow {
+    bottom: 1rem;
+}
+
+.home__header .arrow i {
+    color: #333333;
+}
+
+.home__header .arrow a {
+    color: var(--bs-gray-900);
+    transition: all .3s;
+}
+
+.home__header .arrow a:hover {
+    color: var(--bs-gray-600);
+}
+
+@media (max-width: 992.98px) {
+    .home__header {
+        height: auto;
+        padding-bottom: 5rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .home__header .btn {
+        font-size: .875rem !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .home__header {
+        height: calc(100vh - 111px);
+    }
+    
+    .home__header .logo img {
+        width: 200px;
+        margin-top: 3rem;
+    }
+    
+    .home__header h2 {
+        margin-top: 2rem;
+        font-size: 2.5rem!important;
+    }
+    
+    .home__header .featured-text {
+        font-size: 1.6rem !important;
+        margin-top: 1.5rem;
+    }
+    
+    .home__header .btn-orange {
+        font-size: 1.2rem!important;
+        margin-top: 3rem!important;
+    }
+    
+    .home__header .arrow {
+        bottom: 2%;
+    }
+    
+    .home__header .arrow i {
+        font-size: 3rem!important;
+    }
+}
+
+@media (min-width: 1400px) { 
+.home__header .arrow {
+        bottom: 2%;
+    }
+}
+
+@media (min-width: 1200px) and (max-height: 768px) { 
+    .home__header {
+         height: auto;
+         padding-bottom: 6rem
+    }
+}
+</style>
+
+
+<div class="home__header flex-fill text-center position-relative">
+    <div class="logo pt-3">
+        <img src="https://rmkcdn.successfactors.com/e3724507/c7c84866-bf8b-433e-bfc4-5.png">
+    </div>
+    <h2 class="ff-bold text-white pt-3">Te damos la bienvenida a nuestro portal de empleo</h2>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-xl-7 col-xxl-9 col-md-10">
+                <p class="text-white pt-2 fs-5 featured-text">GRUP MEDIAPRO es un grupo líder en el sector audiovisual europeo único en integración de contenidos, producción y distribución audiovisual.
+                </p>
+            </div>
+            <div class="col-12">
+                <a href="#home__work_areas" class="btn btn-orange btn-primary fs-6 mt-4 px-4">
+                    CONOCE NUESTRAS ÁREAS DE TRABAJO
+                </a>
+            </div>
+
+            <div class="arrow position-absolute">
+                <a href="#home__work_areas" class="">
+                    <i class="fa fa-chevron-circle-down  fs-2" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+    <div class="customPlugin customPlugin-993fc73ccbe81251 displayDTM">
+        <div class="inner"><style>
+    @viewport {
+        zoom: 1.0;
+        width: device-width;
+    }
+
+html {
+      scroll-behavior: smooth;
+}
+
+#home__work_areas {
+scroll-behavior: smooth;
+}
+#home__work_areas .title {
+margin: 4rem 0 !important
+}
+.home__work_areas--item {
+    margin-top: calc(var(--bs-gutter-x) * .2);
+    padding-right: calc(var(--bs-gutter-x) * .2);
+    padding-left: calc(var(--bs-gutter-y) * .2);
+}
+
+.background {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 19vw;
+    display: block;
+    transition: all .3s;
+}
+
+.background:hover {
+    transform: scale(1.01);
+}
+
+.background.broadcast {
+    background-image: url("https://rmkcdn.successfactors.com/e3724507/4653aa0b-7d54-42af-934f-8.jpg");
+}
+
+.background.broadcast:hover {
+    background-image: url("https://rmkcdn.successfactors.com/e3724507/44095612-1b72-46ca-a5e9-7.jpg");
+}
+
+.background.corporate {
+    background-image: url("https://rmkcdn.successfactors.com/e3724507/a845c1fc-7c4b-4e44-9969-4.jpg");
+}
+
+.background.corporate:hover {
+    background-image: url("https://rmkcdn.successfactors.com/e3724507/825f2fe3-a330-4599-a3fa-5.jpg");
+}
+
+.background.law {
+    background-image: url("https://rmkcdn.successfactors.com/e3724507/9eb3c60f-13d3-48b8-ba47-d.jpg");
+    background-position: center center;
+}
+
+.background.law:hover {
+    background-image: url("https://rmkcdn.successfactors.com/e3724507/7cba4d3a-9764-47e0-ab76-4.jpg");
+}
+
+.background.digital {
+    background-image: url("https://rmkcdn.successfactors.com/e3724507/b7a28895-4595-432c-9a2a-5.jpg");
+}
+
+.background.digital:hover {
+    background-image: url("https://rmkcdn.successfactors.com/e3724507/515d237f-82bf-4905-8e68-4.jpg");
+}
+
+.background.innovation {
+    background-image: url("https://rmkcdn.successfactors.com/e3724507/9c7c9327-1d7e-4237-b045-f.jpg");
+}
+
+.background.innovation:hover {
+    background-image: url("https://rmkcdn.successfactors.com/e3724507/5f238db6-199f-43ed-97e9-0.jpg");
+}
+
+.background.studio {
+    background-image: url("https://rmkcdn.successfactors.com/e3724507/b1238426-dc89-4d1e-963f-2.jpg");
+}
+
+.background.studio:hover {
+    background-image: url("https://rmkcdn.successfactors.com/e3724507/eab5a9b4-ad62-41be-813c-f.jpg");
+}
+
+/*******************
+ * MOBILE
+ *******************/
+
+@media (max-width: 991.98px) {
+    .background {
+        height: 28vw;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .background {
+        height: 55vw;
+    }
+
+    .home__work_areas--item {
+        margin-top: calc(var(--bs-gutter-x) * .3);
+        padding-right: calc(var(--bs-gutter-x) * .4);
+        padding-left: calc(var(--bs-gutter-x) * .4);
+    }
+}
+
+@media (max-width: 1024px) {
+    .home__work_areas .row {
+       --bs-gutter-x: 1rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .background {
+        height: 20vw;
+    }
+}
+
+@media (min-width: 1900px) {
+    .background {
+        height: 14vw;
+    }
+}
+
+</style>
+
+<div class="home__work_areas text-center" id="home__work_areas">
+    <p class="mt-3 fs-2 ff-semi-bold title">Áreas de trabajo</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12  home__work_areas--item">
+                <a href="https://jobs.mediapro.tv/empleos/go/BROADCAST_&amp;_MEDIA-SERVICES/8727202/" class="background broadcast"></a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12 col-sm-6 home__work_areas--item">
+                <a href="https://jobs.mediapro.tv/empleos/go/_CORPORATIVO/8727602/" class="background corporate"></a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12 col-sm-6 home__work_areas--item">
+                <a href="https://jobs.mediapro.tv/empleos/go/GESTI%C3%93N_DE_DERECHOS/8727402/" class="background law"></a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12 col-sm-6 home__work_areas--item">
+                <a href="https://jobs.mediapro.tv/empleos/go/%C3%81REA_DIGITAL/8727302/" class="background digital"></a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12 col-sm-6 home__work_areas--item">
+                <a href="https://jobs.mediapro.tv/empleos/go/_INNOVACI%C3%93N/8727502/" class="background innovation"></a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12 col-sm-6 home__work_areas--item">
+                <a href="https://jobs.mediapro.tv/empleos/go/_STUDIO/8727102/" class="background studio"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+
+    <div class="customPlugin customPlugin-5ca78d6edb1dc8f3 displayDTM">
+        <div class="inner"><style>
+.py-6 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.my-6 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.home__job-search {
+    background: url("https://rmkcdn.successfactors.com/e3724507/0d51ea6c-ac96-4f1a-805c-f.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home__job-search input[type='text'] {
+    background: #ffffff;
+    -webkit-box-shadow: 0px 0px 21px -5px #000000;
+    box-shadow: 0px 0px 21px -5px #000000;
+    color: #676767;
+    font-weight: 500;
+}
+
+.home__job-search input[type='text']::placeholder {
+    color: #676767;
+    font-weight: 500;
+}
+
+.home__job-search .offers {
+    padding: .5rem 3.5rem;
+    font-weight: 500;
+}
+
+.home__job-search .search {
+    padding: .4rem 1.3rem;
+    font-size: 1.2rem !important;
+}
+
+@media (max-width: 767px) {
+    .home__job-search input[type='text'] {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .home__job-search .row {
+       --bs-gutter-x: 1rem;
+    }
+}
+</style>
+
+<div class="text-center py-5 home__job-search">
+    <div class="container">
+        <h2 class="orange-color pb-5 ff-semi-bold fs-2 ">Búsqueda de empleo</h2>
+
+        <form action="https://jobs.mediapro.tv/empleos/go/empleos/8725802/" class="row justify-content-center gx-3 gy-2 align-items-center my-6 pb-5">
+            <div class="col-md-5 col-sm-5 col-lg-4">
+                <input name="q" type="text" class="form-control" id="searchWords" placeholder="Buscar por palabra clave">
+            </div>
+            <div class="col-md-5 col-sm-5 col-lg-4">
+                <input name="locationsearch" type="text" class="form-control" id="searchUbication" placeholder="Buscar por ubicación">
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary btn-orange search" value=""><i class="fa fa-search"></i></button>
+            </div>
+        </form>
+
+        <div>
+            <a href="https://jobs.mediapro.tv/empleos/go/empleos/8725802/" class="btn btn-primary btn-orange offers" target="_blank">VER TODAS LAS OFERTAS</a>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+    <div class="customPlugin customPlugin-bf371c0dcfa6bd11 displayDTM">
+        <div class="inner"><script type="text/javascript">
+const currencyFormat = new Intl.NumberFormat('de-DE');
+
+jQuery(document).ready(function() {
+    let animated = 0;
+    $(window).scroll(function() {
+        let oTop = $('.home__counters').offset().top - window.innerHeight;
+        if (animated == 0 && $(window).scrollTop() > oTop) {
+            animated = 1;
+            $('.counter').each(function () {
+                $(this).prop('Counter',0).animate({
+                    Counter: $(this).text().replace(/\D/g, "")
+                }, {
+                    duration: 4000,
+                    easing: 'swing',
+                    step: function (now) {
+                        const number = Math.ceil(now);
+                        $(this).text(currencyFormat.format(number));
+                    }
+                });
+            });
+        }
+    });
+});
+</script>
+<style>
+.home__counters {
+    background: url('https://rmkcdn.successfactors.com/e3724507/1c1df089-d20b-4efe-b05d-8.jpg');
+    background-size: cover;
+}
+
+.home__counters .counter-box {
+    display: block;
+    padding: 40px 20px 37px;
+    text-align: center
+}
+
+.home__counters .counter-box p {
+    margin: 5px 0 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 500
+}
+
+.home__counters .counter {
+    display: inline;
+    font-weight: 700;
+    line-height: 28px
+}
+
+.home__counters .counter-box .counter {
+    color: #ffffff;
+}
+
+/*******************
+ * MOBILE
+ *******************/
+
+@media (max-width: 991.98px) and (min-width: 600px) {
+    .home__counters .counter-box {
+        padding: 25px 20px 37px;
+    }
+
+    .home__counters .col-md-auto,
+    .home__counters .col-md-3 {
+        --bs-gutter-y: 0;
+        --bs-gutter-x: 0;
+    }
+
+    .home__counters .wrapper-logo .logo {
+        max-width: 120px;
+    }
+
+    .home__counters .wrapper-logo p,
+    .home__counters .counter-box .counter,
+    .home__counters .wrapper-logo p {
+        font-size: calc(1.3rem + .6vw)!important;
+    }
+
+    .home__counters .counter-box p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .home__counters {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .home__counters .counter-box {
+        padding: 0 0 20px 0;
+    }
+
+    .home__counters .logo {
+        max-width: 120px;
+    }
+}
+@media (max-width: 1024px) {
+    .home__counters .row {
+       --bs-gutter-x: 1rem;
+    }
+}
+
+</style>
+
+<div class="text-center home__counters py-md-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 wrapper-logo">
+                <img class="logo img-fluid" src="https://rmkcdn.successfactors.com/e3724507/c7c84866-bf8b-433e-bfc4-5.png">
+                <p class="fs-1 orange-secondary-color">Cifras Relevantes</p>
+            </div>
+            <div class="col-md-auto">
+                <div class="counter-box">
+                    <i class="fa fa-plus orange-secondary-color fs-5"></i>
+                    <span class="counter fs-1">7.120</span>
+                    <p class="orange-light-color">Profesionales</p>
+                </div>
+            </div>
+            <div class="col-md-auto">
+                <div class="counter-box">
+                    <i class="fa fa-plus orange-secondary-color fs-5"></i>
+                    <span class="counter fs-1">52</span>
+                    <p class="orange-light-color">Sedes</p>
+                </div>
+            </div>
+            <div class="col-md-auto">
+                <div class="counter-box">
+                    <i class="fa fa-plus orange-secondary-color fs-5"></i>
+                    <span class="counter fs-1">30</span>
+                    <p class="orange-light-color">Países</p>
+                </div>
+            </div>
+            <div class="col-md-auto">
+                <div class="counter-box">
+                    <i class="fa fa-plus orange-secondary-color fs-5"></i>
+                    <span class="counter fs-1">4</span>
+                    <p class="orange-light-color">Continentes</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+    <div class="customPlugin customPlugin-4904e884bd8a99bf displayDTM">
+        <div class="inner"><style>
+.home-info__companies__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.home-info__companies__list__item img {
+    transition: all .3s;
+}
+
+.home-info__companies__list__item img:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 767px) {
+   .col-xs-6 {
+     width: 50%!important;
+   }
+}
+</style>
+<div class="container my-5 text-center">
+    <p class="py-2 fs-2 ff-bold"> Empresas del Grupo </p>
+    <ul class="home-info__companies__list row ">
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="http://www.100balas.tv" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_100balas_logo.jpg"></a>
+        </li>
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="http://www.adisar.com" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_adisar_logo.jpg"></a>
+        </li>
+
+  <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="https://bigbangmedia.es/" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/BIG_BANG_MEDIA_logo.jpg"></a>
+        </li>
+
+ <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="https://cimarroncine.com/" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/CIMARRON_logo.jpg"></a>
+        </li>
+
+ <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="https://cls-audio.pt/pt/" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_cls_logo.png"></a>
+        </li>
+
+<li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="https://eltercercamerino.es/" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_eltercercamerino_logo.jpg"></a>
+        </li>
+
+
+
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="http://www.geca.es" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_geca_logo.jpg"></a>
+        </li>
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="http://www.getset.pt" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_getset_logo.jpg"></a>
+        </li>
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="http://globomedia.es" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_globomedia_logo.png"></a>
+        </li>
+
+   <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="mailto:info@hostoil.com" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/HOSTOIL_logo.jpg"></a>
+        </li>
+
+
+
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="http://www.k2000.com" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_k2000_logo.png"></a>
+        </li>
+     
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="http://distribution.themediaprostudio.com" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_mediapro_studio_distribution_logo.jpg"></a>
+        </li>
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="http://www.lvp.es" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_lvp_logo.jpg"></a>
+        </li>
+    
+    <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="https://mediapro.tv/" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_medialuso_logo.png"></a>
+        </li>
+
+
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="mailto:generalmediaprobrands@mediapro.es" target="_self"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_mediapro_brands_logo.jpg"></a>
+        </li>
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="http://mediaproexhibitions.com" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_mediaproexhibitions_logo.jpg"></a>
+        </li>
+
+   <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="https://mediaproservices.tv/" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/MEDIA_SERVICES_logo.jpg"></a>
+        </li>
+
+
+
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="#" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_mediaproespais_logo.png"></a>
+        </li>
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="https://www.mediaproevents.tv/" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/Mediapro_Events.jpg"></a>
+        </li>
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="http://mediasurtv.com/" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_mediasur_logo.jpg"></a>
+        </li>
+
+<li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="http://mediapro.tv/" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/MEDIATEM_logo.jpg"></a>
+        </li>
+<li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="https://mediatravel.com.pt/" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_mediatravel_logo.png"></a>
+        </li>
+<li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="http://mediapro.tv/" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/OFICINA_BURMAN_logo.jpg"></a>
+        </li>
+
+
+
+
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="http://omnicam.pt" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_omnicam_logo.jpg"></a>
+        </li>
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="http://www.overon.es" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_overon_logo.jpg"></a>
+        </li>
+
+<li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="https://www.tres60.tv/" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/REZ_logo.jpg"></a>
+        </li>
+
+
+      
+   <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="https://www.tres60.tv/" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/TELSON_logo.jpg"></a>
+        </li>
+
+
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="https://www.themediaprostudio.com" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_mediapro_studio_logo.png"></a>
+        </li>
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="http://unitecnic.com" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_unitecnic_logo.jpg"></a>
+        </li>
+
+<li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="https://www.tres60.tv/" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/VIDEOREPORT_logo.jpg"></a>
+        </li>
+
+
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="https://vitv.es" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_mediaprovitv_logo.png"></a>
+        </li>
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="https://visyon360.com" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_visyon_logo.png"></a>
+        </li>
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="https://www.wtvision.com" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_wtvision_logo.jpg"></a>
+        </li>
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="https://www.elterrat.com" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_terrat.png"></a>
+        </li>
+
+   <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="https://frescofilm.com/" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_Fresco_Film_Logo.jpg"></a>
+        </li>
+
+
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="http://www.mediaproargentina.tv" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_mediaproargentina_logo.png"></a>
+        </li>
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="https://mediapro.asia" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_mediaproasia_logo.png"></a>
+        </li>
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="#" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_mediaprobolivia_logo.png"></a>
+        </li>
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="https://mediaprocanada.tv" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_mediaprocanada_logo.png"></a>
+        </li>
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="#" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_mediaprocanarias_logo.png"></a>
+        </li>
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="#" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_mediaprochile_logo.png"></a>
+        </li>
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="https://mediaprochina.tv" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_mediaprochina_logo.png"></a>
+        </li>
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="https://mediaprocolombia.tv" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_mediaprocolombia_logo.png"></a>
+        </li>
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="#" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_mediaproegypt_logo.png"></a>
+        </li>
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="https://mediapro-eu.tv" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_mediaproeu_logo.png"></a>
+        </li>
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="#" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_mediaprogreece_logo.png"></a>
+        </li>
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="https://mediaproitalia.tv" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_mediaproitalia_logo.png"></a>
+        </li>
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="#" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_mediapromexico_logo.png"></a>
+        </li>
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="http://www.mediaprome.com" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_mediapro_middle_east_logo.png"></a>
+        </li>
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="#" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_mediaproperu_logo.png"></a>
+        </li>
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="http://www.medialuso.tv" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_mediaproportugal_logo.png"></a>
+        </li>
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="#" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_mediaprosingapore_logo.png"></a>
+        </li>
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="http://www.mediaproturkey.com" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_mediaproturkey_logo.png"></a>
+        </li>
+        <li class="home-info__companies__list__item col-xs-6 col-sm-4 col-md-2 col-lg-2">
+            <a href="https://www.mediaprous.tv" target="_blank"><img class="img-fluid mt-5" src="https://mediapro.tv/static/img/company_mediaprous_logo.png"></a>
+        </li>
+    </ul>
+</div>
+        </div>
+    </div>
+
+    <div class="customPlugin customPlugin-ab2db8820e43dbd5 displayDTM">
+        <div class="inner"><style>
+.home__inclusion {
+    background-image: url("https://rmkcdn.successfactors.com/e3724507/266bc8c6-44a3-4c57-b12f-c.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: .875rem;
+    padding-right: .875rem;
+}
+</style>
+<div class="home__inclusion py-5 text-center">
+    <h2 class="mb-4 orange-color fs-2 ff-semi-bold"><span class="text-white">Incluimos</span> a todas las personas</h2>
+    <p class="text-white fs-5 mb-4">En GRUP MEDIAPRO apostamos por la Diversidad e Igualdad, <br>
+        y trabajamos día a día para que sea una realidad.</p>
+</div>
+
+        </div>
+    </div>
+
+    <div class="customPlugin customPlugin-48c9e7dd142668ff displayDTM">
+        <div class="inner"><style>
+.home__testimonials__list .card img {
+    padding: 5px;
+}
+
+.home__testimonials__list .card {
+    background-color: #f2f2f2;
+    border: 0;
+    border-radius: 1.5em;
+    padding: 1.5em;
+}
+
+.home__testimonials__list .card  .card-title {
+    font-size: 1.25rem;
+    margin: 0.75rem 0;
+}
+
+.home__testimonials__list  .card .card-sub-title {
+    font-size: 1rem;
+    margin: 0.75rem 0;
+}
+
+.home__testimonials__list .card  .card-text {
+    font-size: 1rem;
+   font-style: italic;
+}
+
+.home__testimonials__list .swiper-button-next, .home__testimonials__list .swiper-rtl .swiper-button-prev {
+    right: 10px;
+    left: auto;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #495057;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .home__testimonials__list .card {
+        padding: .5rem;
+    }
+
+    .home__testimonials__list .swiper-slide-active .slide-card {
+        margin-left: 8.33333333% !important;
+    }
+
+    .home__testimonials__list .swiper-slide-next .slide-card {
+        margin-left: 0 !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .home__testimonials__list .slide-card {
+        text-align: center;
+    }
+
+    .home__testimonials__list .card {
+        padding: .5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .offset-lg-1 {
+        margin-left: 8.33333333%;
+    }
+}
+</style>
+
+<div class="home__testimonials container my-4">
+    <div class="home__testimonials__list">
+        <div class="swiper mySwiper swiper-initialized swiper-horizontal swiper-pointer-events">
+            <div class="swiper-wrapper" id="swiper-wrapper-fc1cd8ebc2d39c22" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">
+                <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 4" style="width: 480px; margin-right: 10px;">
+                    <div class="row">
+                        <div class="col-xs-10 col-md-11 offset-1 col-lg-11 slide-card col-sm-offset-1 slide-card offset-lg-1">
+                            <div class="card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-3 col-lg-4 col-xs-4">
+                                        <img src="https://rmkcdn.successfactors.com/e3724507/737c497b-200a-4f6e-a231-f.png" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-9 col-lg-8 col-xs-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title orange-color ff-bold">Carlos Carrión</h5>
+                                            <h6 class="card-sub-title orange-secondary-color ff-bold">Ayudante de Producción en el Departamento de Producción de eventos de Mediapro Events | España</h6>
+                                            <p class="card-text grey-color ff-italic ff-semi-bold">"Grup Mediapro ha tenido gran importancia tanto en mi vida personal como profesional. He conocido personas diversas y establecido valiosas amistades, mientras que profesionalmente he desarrollado habilidades autónomas y colaborativas. Se valora la inclusión y el trato igualitario hacia las personas con discapacidad, lo que demuestra el compromiso de la empresa con la diversidad."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 4" style="width: 480px; margin-right: 10px;">
+                    <div class="row">
+                        <div class="col-xs-10 col-md-11 offset-1 col-lg-11 slide-card col-sm-offset-1 col-lg-offset-0 offset-lg-0">
+                            <div class="card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-3 col-lg-4 col-xs-4">
+                                        <img src="https://rmkcdn.successfactors.com/e3724507/0a44f2e0-03c6-4899-a81c-d.png" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-9 col-lg-8 col-xs-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title orange-color ff-bold">Susanna Nello</h5>
+                                            <h6 class="card-sub-title orange-secondary-color ff-bold">Directora de Producción en el Departamento de Producción de fútbol de Globomedia | España</h6>
+                                            <p class="card-text grey-color ff-italic ff-semi-bold">"Desde 1998, mi experiencia en Grup Mediapro ha sido muy enriquecedora. He tenido la oportunidad de liderar la producción de, entre otros proyectos, el lanzamiento de Real Madrid TV y GOL TV, y he podido desarrollarme de forma exitosa gracias al talento humano, que es el verdadero valor diferencial de esta compañía. Trabajar aquí me ha permitido establecer relaciones laborales con destacados profesionales y enfrentar los retos diarios, de la mano de mis compañeros, con esfuerzo, adaptabilidad y pasión."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+ <div class="swiper-slide" role="group" aria-label="3 / 4" style="width: 480px; margin-right: 10px;">
+                    <div class="row">
+                        <div class="col-xs-10 col-md-11 offset-1 col-lg-11 slide-card col-sm-offset-1 col-lg-offset-0">
+                            <div class="card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-3 col-lg-4 col-xs-4">
+                                        <img src="https://rmkcdn.successfactors.com/e3724507/d5da4a70-eed0-4340-8db4-9.png" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-9 col-lg-8 col-xs-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title orange-color ff-bold">Malory Andrea</h5>
+                                            <h6 class="card-sub-title orange-secondary-color ff-bold">Técnica de Asesoría Laboral en el Departamento para las Personas | España</h6>
+                                            <p class="card-text grey-color ff-italic ff-semi-bold">"Mi experiencia en el grupo ha sido altamente positiva para mi desarrollo personal y profesional. He adquirido habilidades para resolver problemas de forma autónoma y he aprendido día a día de mis compañeros. Esto me ha permitido desarrollar habilidades comunicativas y analíticas. Las claves para el éxito aquí son una actitud positiva, pensamiento crítico e innovación."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" role="group" aria-label="4 / 4" style="width: 480px; margin-right: 10px;">
+                    <div class="row">
+                        <div class="col-xs-10 col-md-11 offset-1 col-lg-11 slide-card col-sm-offset-1">
+                            <div class="card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-3 col-lg-4 col-xs-4">
+                                        <img src="https://rmkcdn.successfactors.com/e3724507/9e68ea40-8dfb-4205-ab45-d.png" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-9 col-lg-8 col-xs-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title orange-color ff-bold">Diego Lorenzo</h5>
+                                            <h6 class="card-sub-title orange-secondary-color ff-bold">Gerente del área para las Personas | Argentina</h6>
+                                            <p class="card-text grey-color ff-italic ff-semi-bold">"Formar parte de una empresa con sedes alrededor de todo el mundo me ha brindado distintas herramientas y una perspectiva amplia sobre procesos y estrategias del negocio. El desarrollo profesional, la cercanía y el respeto son conceptos fundamentales en la organización."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-fc1cd8ebc2d39c22" aria-disabled="false"></div>
+            <div class="swiper-button-prev swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-fc1cd8ebc2d39c22" aria-disabled="true"></div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+    </div>
+</div>
+        </div>
+    </div>
+
+    <div class="customPlugin customPlugin-d36f67981535c3ed displayDTM">
+        <div class="inner"><style>
+.home__newsletter .btn-orange {
+    padding: .5rem 1rem .3rem 1rem;
+}
+
+.home__newsletter .grey-color {
+    font-size:1rem;
+}
+
+@media (max-width: 1024px) {
+    .home__newsletter .row {
+       --bs-gutter-x: 1rem;
+    }
+}
+</style>
+
+<div class="home__newsletter text-center py-4 container">
+    <p class="mb-4 orange-color fs-2">Únete a nuestra comunidad de talentos</p>
+    <p class="grey-color">
+ 
+        ¿Quieres estar al día de las oportunidades que mejor encajan contigo? ¡Apúntate aquí y no te pierdas nada!
+    </p>
+    <form class="row justify-content-center gx-3 gy-2 align-items-center my-4" action="https://career2.successfactors.eu/careers?company=imaginamed" method="post" onsubmit="j2w.TC.handleJoinForm(event)">
+
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary btn-orange" value="">Regístrate</button>
+        </div>
+    </form>
+</div>
+        </div>
+    </div>
+
+    <div class="customPlugin customPlugin-0c996230020725e0 displayDTM">
+        <div class="inner"><style>
+footer.footer {
+    background-color: #000000;
+    border-top: 4px solid #313131;
+    padding-top: 3rem!important;
+    padding-bottom: 3rem!important;
+}
+
+footer.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer.footer ul.icons li {
+    display: inline;
+    margin-right: .5rem;
+}
+
+footer.footer ul.icons li i {
+    font-size: 1.5rem;
+    transition: all .3s;
+}
+
+footer.footer ul.icons li:hover i {
+    color: #f69282
+}
+
+footer.footer .footer__container .logo {
+    max-width: 75px;
+}
+
+/*******************
+ * MOBILE
+ *******************/
+
+@media (max-width: 575.98px) {
+    footer.footer {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    footer.footer .footer__container .logo {
+        max-width: 100px;
+        margin-bottom: 1.5rem;
+    }
+
+    footer.footer .icons {
+        margin-top: 2rem;
+    }
+}
+
+</style>
+<footer class="footer py-4 text-white">
+    <div class="footer__container container text-center">
+        <div class="row">
+            <div class="col-md-2">
+                <a href="/?locale=es_ES">
+                       <img class="img-fluid logo" src="//rmkcdn.successfactors.com/e3724507/c7c84866-bf8b-433e-bfc4-5.png">
+                </a>
+            </div>
+            <div class="col-sm-3  col-md-3 offset-lg-2 offset-md-0 ">
+                <ul class="">
+                    <li class="mb-2"><a class="" href="https://www.mediapro.tv/es/" target="_blank">Sitio Web</a></li>
+                    <li class="mb-2"><a class="" href="https://jobs.mediapro.tv/content/Quienes-Somos/?locale=es_ES" target="_blank">Quiénes Somos</a></li>
+                    <li class="mb-2"><a class="" href="https://jobs.mediapro.tv/empleos/go/empleos/8725802/" _blank"="">Ver Empleos</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4 col-lg-3 col-md-4">
+                <ul class="">
+                    <li class="mb-2"><a class="" href="https://ssff-filer.s3.eu-west-3.amazonaws.com/16012023_Pol%C3%ADtica_Privacidad_procesos_seleccion.pdf" target="_blank">Politica de Privacidad</a></li>
+                    <li class="mb-2"><a class="" href="https://ssff-filer.s3.eu-west-3.amazonaws.com/Aviso+Legal_ES.pdf" target="_blank">Aviso Legal</a></li>
+                    <li><a class="" href="https://ssff-filer.s3.eu-west-3.amazonaws.com/POL%C3%8DTICA+DE+COOKIES_ESP.pdf" target="_blank">Politica de Cookies</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3 col-md-3 col-lg-2">
+                <ul class="icons">
+                    <li><a class="orange-color" href="https://es.linkedin.com/company/mediapro" target="_blank"><i class="fa fa-linkedin orange-color "></i></a></li>
+                    <li><a class="orange-color" href="https://www.instagram.com/mediapro/" target="_blank"><i class="fa fa-instagram orange-color "></i></a></li>
+                    <li><a class="orange-color" href="https://www.youtube.com/GRUPMEDIAPRO" target="_blank"><i class="fa fa-youtube orange-color "></i></a></li>
+                    <li>
+  <a class="orange-color" href="https://www.x.com/grupomediapro" target="_blank" rel="noopener">
+    <img src="https://rmkcdn.successfactors.com/e3724507/ab9879dc-d3ed-4f80-ae8a-d.png" alt="X (Twitter)" style="height: 1.5rem; vertical-align: middle;">
+  </a>
+</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        </div>
+    </div>
+                    </div>
+                </div>
+            </div>
+
+    <div id="footer" role="contentinfo">
+        <div id="footerRowTop" class="footer footerRow">
+            <div class="container ">
+
+    <div id="footerInnerLinksSocial" class="row">
+                    <a href="https://mediapro.tv/">
+                        <img class="logo" src="//rmkcdn.successfactors.com/e3724507/bf335ada-cd6c-4d75-9200-7.png" align="left">
+                    </a>
+        <ul class="inner links" role="list">
+        </ul>
+            <div class="rightfloat">
+                    <ul class="disclaimer social-links" role="list">
+                                <li class="social-icons">
+                                        <a href="https://twitter.com/grupomediapro" class="social-icon btn-twitter" target="_blank" aria-label="Síganos en X" aria-description="Se abre en una nueva pestaña." title="X">
+                                            <svg width="35px" height="35px" viewBox="0 0 1200 1227">
+                                                <path fill="#ef4730" id="SVGPath" d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"></path>
+                                            </svg>
+                                    </a>
+                                </li>
+                                <li class="social-icons">
+                                        <a href="https://es.linkedin.com/company/mediapro" class="social-icon btn-linkedin" target="_blank" aria-label="Síganos en LinkedIn" aria-description="Se abre en una nueva pestaña." title="linkedin">
+                                            <svg width="48px" height="48px" viewBox="0 0 48 48">
+                                                <path fill="#ef4730" id="linkedin1" d="M41,4.1H7A2.9,2.9,0,0,0,4,7V41.1A2.9,2.9,0,0,0,7,44H41a2.9,2.9,0,0,0,2.9-2.9V7A2.9,2.9,0,0,0,41,4.1Zm-25.1,34h-6v-19h6Zm-3-21.6A3.5,3.5,0,0,1,9.5,13a3.4,3.4,0,0,1,6.8,0A3.5,3.5,0,0,1,12.9,16.5ZM38,38.1H32.1V28.8c0-2.2,0-5-3.1-5s-3.5,2.4-3.5,4.9v9.4H19.6v-19h5.6v2.6h.1a6.2,6.2,0,0,1,5.6-3.1c6,0,7.1,3.9,7.1,9.1Z"></path>
+                                            </svg>
+                                    </a>
+                                </li>
+                                <li class="social-icons">
+                                        <a href="https://www.youtube.com/mediapro" class="social-icon btn-youtube" target="_blank" aria-label="Visite nuestro canal de YouTube" aria-description="Se abre en una nueva pestaña." title="youtube">
+                                            <svg width="48px" height="48px" viewBox="0 0 24 24">
+                                                <path fill="#ef4730" id="youtube1" d="M19.67 8.14002C19.5811 7.7973 19.4028 7.48433 19.1533 7.23309C18.9038 6.98185 18.5921 6.80134 18.25 6.71001C16.176 6.4654 14.0883 6.35517 12 6.38001C9.91174 6.35517 7.82405 6.4654 5.75001 6.71001C5.40793 6.80134 5.09622 6.98185 4.84674 7.23309C4.59725 7.48433 4.41894 7.7973 4.33001 8.14002C4.10282 9.41396 3.99236 10.706 4.00001 12C3.99198 13.3007 4.10244 14.5994 4.33001 15.88C4.42355 16.2172 4.60391 16.5239 4.85309 16.7696C5.10226 17.0153 5.41153 17.1913 5.75001 17.28C7.82405 17.5246 9.91174 17.6349 12 17.61C14.0883 17.6349 16.176 17.5246 18.25 17.28C18.5885 17.1913 18.8978 17.0153 19.1469 16.7696C19.3961 16.5239 19.5765 16.2172 19.67 15.88C19.8976 14.5994 20.008 13.3007 20 12C20.0077 10.706 19.8972 9.41396 19.67 8.14002ZM10.36 14.39V9.63001L14.55 12L10.36 14.38V14.39Z"></path>
+                                            </svg>
+                                    </a>
+                                </li>
+                                <li class="social-icons">
+                                        <a href="https://www.instagram.com/mediapro/" class="social-icon btn-instagram" target="_blank" aria-label="Síganos en Instagram" aria-description="Se abre en una nueva pestaña." title="instagram">
+                                            <svg fill="#ef4730" width="48px" height="48px" viewBox="0 0 32 32"><path id="instagram1" d="M20.445 5h-8.891A6.559 6.559 0 0 0 5 11.554v8.891A6.559 6.559 0 0 0 11.554 27h8.891a6.56 6.56 0 0 0 6.554-6.555v-8.891A6.557 6.557 0 0 0 20.445 5zm4.342 15.445a4.343 4.343 0 0 1-4.342 4.342h-8.891a4.341 4.341 0 0 1-4.341-4.342v-8.891a4.34 4.34 0 0 1 4.341-4.341h8.891a4.342 4.342 0 0 1 4.341 4.341l.001 8.891z"></path><path d="M16 10.312c-3.138 0-5.688 2.551-5.688 5.688s2.551 5.688 5.688 5.688 5.688-2.551 5.688-5.688-2.55-5.688-5.688-5.688zm0 9.163a3.475 3.475 0 1 1-.001-6.95 3.475 3.475 0 0 1 .001 6.95zM21.7 8.991a1.363 1.363 0 1 1-1.364 1.364c0-.752.51-1.364 1.364-1.364z"></path></svg>
+                                    </a>
+                                </li>
+                    </ul>
+            </div>
+        </div>
+            </div>
+        </div>
+            <div id="footerColumnsShell" class="footerRow footerColumnsShell">
+                <div class="container ">
+
+    
+
+    <footer id="footerColumns" class="row footerColumns">
+            <nav class="footerMenu col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <h2 class="footerMenuTitle"></h2>
+
+                <ul>
+                                <li><a href="https://www.mediapro.tv/es/" title="Sitio Web" target="_blank">Sitio Web</a></li>
+                                <li><a href="/content/Quienes-Somos/?locale=es_ES" title="Quiénes Somos">Quiénes Somos</a></li>
+                                <li><a href="https://mediapro.valhalla2.stage.jobs2web.com/search" title="Ver empleos">Ver empleos</a></li>
+                </ul>
+            </nav>
+            <nav class="footerMenu col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <h2 class="footerMenuTitle"></h2>
+
+                <ul>
+                                <li><a href="https://ssff-filer.s3.eu-west-3.amazonaws.com/25022021_Pol%C3%ADtica_Privacidad_procesos_seleccion.pdf" title="Política de Privacidad" target="_blank">Política de Privacidad</a></li>
+                                <li><a href="https://ssff-filer.s3.eu-west-3.amazonaws.com/Aviso+Legal_ES.pdf" title="Aviso Legal" target="_blank">Aviso Legal</a></li>
+                                <li><a href="https://ssff-filer.s3.eu-west-3.amazonaws.com/POL%C3%8DTICA+DE+COOKIES_ESP.pdf" title="Política de cookies" target="_blank">Política de cookies</a></li>
+                </ul>
+            </nav>
+                <div class="clearfix visible-xs-block"></div>
+    </footer>
+                </div>
+            </div>
+
+        <div id="footerRowBottom" class="footer footerRow">
+            <div class="container ">
+            </div>
+        </div>
+    </div>
+        </div>
+            <script class="keepscript" src="https://jobs.mediapro.tv/platform/bootstrap/3.4.8_NES/js/lib/dompurify/purify.min.js" type="text/javascript"></script>
+            <script class="keepscript" src="https://jobs.mediapro.tv/platform/bootstrap/3.4.8_NES/js/bootstrap.min.js" type="text/javascript"></script><script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script type="text/javascript">
+jQuery(function($) {
+	function setClassesInElements() {
+		$('.slide-card').removeClass('offset-lg-1');
+		$('.slide-card').removeClass('offset-lg-0');
+
+		$('.swiper-slide-active .slide-card').addClass('offset-lg-1');
+		$('.swiper-slide-next .slide-card').addClass('offset-lg-0');
+	}
+
+
+	new Swiper(".mySwiper", {
+		slidesPerView: "auto",
+		spaceBetween: 10,
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		on: {
+			init: setClassesInElements,
+			slideChangeTransitionStart: setClassesInElements,
+			resize: setClassesInElements
+		},
+		breakpoints: {
+			1024: {
+				slidesPerView: 2
+			},
+		}
+	});
+});
+
+</script>
+
+<style>
+<!-- header -->
+div.headerbordertop {
+ background-color: #000 !important;
+}
+#headerbordertop{
+  background-color: #000 !important;
+display: none !important;
+}
+.limitwidth{
+  background-color: #000 !important;
+    max-width: 100% !important;
+}
+.headersubmenu {
+    background-color: #000 !important;
+}
+##################################### end header
+.headerlocaleselector {
+background-color: rgba(239,71,48,1.0);
+border-radius:1em;
+width:6em;
+}
+.profileWidget{
+background-color: rgba(239,71,48,1.0);
+border-radius:1em;
+width:6em;
+}
+a.profileWidge:hover{
+color: black;
+}
+.custom-header-signinLanguage {
+width: 130%;
+}
+
+#header{
+font-family: custom2c2ec69411b248d2bb0da !important;
+ font-size: 19px !important;
+}
+.lower.headersubmenu{
+font-family: custom2c2ec69411b248d2bb0da !important;
+font-size: 19px !important;
+text-align:center;
+}
+.menu.desktop.upper{
+padding-bottom:0px !important;
+}
+.menu.desktop.upper .logo{
+margin-top: 1em;
+}
+
+.keywordsearch-q{
+border-color: black !important;
+}
+.keywordsearch-locationsearch{
+border-color: black !important;
+}
+</style>
+
+		<script type="text/javascript">
+		//<![CDATA[
+			$(function() 
+			{
+				var ctid = '5b7b8952-181b-4d27-9ebc-bdfe2948cbdb';
+				var referrer = '';
+				var landing = document.location.href;
+				var brand = '';
+				$.ajax({ url: '/services/t/l'
+						,data: 'referrer='+ encodeURIComponent(referrer)
+								+ '&ctid=' + ctid 
+								+ '&landing=' + encodeURIComponent(landing)
+								+ '&brand=' + brand
+						,dataType: 'json'
+						,cache: false
+						,success: function(){}
+				});
+			});
+		//]]>
+		</script>
+        <script type="text/javascript">
+            //<![CDATA[
+            $(function() {
+                $('input:submit,button:submit').each(function(){
+                    var submitButton = $(this);
+                    if(submitButton.val() == '') submitButton.val('');
+                });
+
+                $('input, textarea').placeholder();
+            });
+            //]]>
+        </script>
+					<script type="text/javascript" src="/platform/js/localized/strings_es_ES.js?h=47df3f59"></script>
+					<script type="text/javascript" src="/platform/js/j2w/min/j2w.core.min.js?h=47df3f59"></script>
+					<script type="text/javascript" src="/platform/js/j2w/min/j2w.tc.min.js?h=47df3f59"></script>
+
+		<script type="text/javascript">
+			//<![CDATA[
+				j2w.init({
+					"cookiepolicy"   : 3,
+					"useSSL"         : true,
+					"isUsingSSL"     : true,
+					"isResponsive"   : true,
+					"categoryId"     : 0,
+					"siteTypeId"     : 1,
+					"ssoCompanyId"   : 'imaginamed',
+					"ssoUrl"         : 'https://career2.successfactors.eu',
+					"passwordRegEx"  : '^(?=.{6,20}$)(?!.*(.)\\1{3})(?=.*([\\d]|[^\\w\\d\\s]))(?=.*[A-Za-z])(?!.*[\\u007F-\\uFFFF\\s])',
+					"emailRegEx"     : '^(?![+])(?=([a-zA-Z0-9\\\'.+!_-])+[@]([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9.-]*[a-zA-Z0-9])[.]([a-zA-Z]){1,63}$)(?!.*[\\u007F-\\uFFFF\\s,])(?!.*[.]{2})',
+					"hasATSUserID"	 : false,
+					"useCASWorkflow" : true,
+					"brand"          : "",
+					"dpcsStateValid" : true
+					
+				});
+
+				j2w.TC.init({
+					"seekConfig" : {
+						"url" : 'https\x3A\x2F\x2Fwww.seek.com.au\x2Fapi\x2Fiam\x2Foauth2\x2Fauthorize',
+						"id"  : 'successfactors12',
+						"advertiserid" : ''
+					}
+				});
+
+				$.ajaxSetup({
+					cache   : false,
+					headers : {
+						"X-CSRF-Token" : "3d52383f-49bb-4e80-bc89-4c7dc63a8553"
+					}
+				});
+			//]]>
+		</script>
+					<script type="text/javascript" src="/platform/js/search/search.js?h=47df3f59"></script>
+					<script type="text/javascript" src="/platform/js/j2w/min/j2w.user.min.js?h=47df3f59"></script>
+					<script type="text/javascript" src="/platform/js/j2w/min/j2w.agent.min.js?h=47df3f59"></script>
+        
+        <script type="text/javascript" src="/platform/js/jquery/js.cookie-2.2.1.min.js"></script>
+        <script type="text/javascript" src="/platform/js/jquery/jquery.lightbox_me.js"></script>
+        <script type="text/javascript" src="/platform/js/jquery/jquery.placeholder.2.0.7.min.js"></script>
+        <script type="text/javascript" src="/js/override.js?locale=es_ES&amp;i=465693209"></script>
+        <script type="text/javascript">
+            const jobAlertSpans = document.querySelectorAll("[data-testid=jobAlertSpanText]");
+            jobAlertSpans?.forEach((jobEl) => {
+              jobEl.textContent = window?.jsStr?.tcjobresultscreatejobalertsdetailstext || "";
+            });
+        </script>
+		
+    </body></html>

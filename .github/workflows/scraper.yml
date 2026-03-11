@@ -1,0 +1,64 @@
+name: Audiovisual Jobs Scraper
+
+on:
+  schedule:
+    # 4 ejecuciones diarias, todos los días (incluido fin de semana)
+    # Hora España (CEST UTC+2): 07h, 12h, 17h, 21h → UTC: 05h, 10h, 15h, 19h
+    - cron: '0 5 * * *'   # 07:00 España - Inicio de jornada
+    - cron: '0 10 * * *'  # 12:00 España - Mediodía
+    - cron: '0 15 * * *'  # 17:00 España - Final jornada laboral
+    - cron: '0 19 * * *'  # 21:00 España - LinkedIn y portales actualizan tarde
+  workflow_dispatch:
+    # Permite ejecución manual desde la interfaz de GitHub
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r audiovisual_jobs/requirements.txt
+
+    - name: Install Playwright Browsers
+      run: |
+        python -m playwright install chromium --with-deps
+
+    - name: Run Scraper
+      env:
+        # Base de datos Supabase
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        # IA - Groq para resúmenes
+        GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        # Email alertas
+        SMTP_SERVER: "smtp.gmail.com"
+        SMTP_PORT: "587"
+        ALERT_EMAIL_FROM: ${{ secrets.ALERT_EMAIL_FROM }}
+        ALERT_EMAIL_PASSWORD: ${{ secrets.ALERT_EMAIL_PASSWORD }}
+        ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
+        # Configuración scraper
+        HEADLESS: "true"
+        MAX_REINTENTOS: "2"
+        TIMEOUT: "30000"
+        DELAY_MIN: "3"
+        DELAY_MAX: "7"
+        OFERTAS_POR_PORTAL: "30"
+        # Telegram (opcional)
+        TELEGRAM_API_ID: ${{ secrets.TELEGRAM_API_ID }}
+        TELEGRAM_API_HASH: ${{ secrets.TELEGRAM_API_HASH }}
+        TELEGRAM_CHANNELS: ${{ secrets.TELEGRAM_CHANNELS }}
+      run: |
+        cd audiovisual_jobs
+        python main.py

@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+:root {
+  --primary-color: #111111;
+  --secondary-color: #333333;
+  --accent-color: #000000;
+  --text-color: #444444;
+  --light-gray: #f5f5f5;
+  --border-color: #e0e0e0;
+  --font-sans: 'Outfit', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--text-color);
+  background: white;
+  line-height: 1.5;
+  font-size: 11px; /* Optimal reading size for A4 PDF */
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* A4 Page Container */
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 15mm 20mm;
+  margin: 0 auto;
+  background: white;
+  position: relative;
+}
+
+/* Header Section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.header-left {
+  flex: 1;
+}
+
+h1 {
+  font-family: var(--font-serif);
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--primary-color);
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.header-right {
+  text-align: right;
+  font-size: 10px;
+  color: var(--secondary-color);
+  line-height: 1.6;
+}
+
+.header-right a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.header-right span {
+  display: block;
+}
+
+/* Two Column Layout */
+.content {
+  display: flex;
+  gap: 25px;
+}
+
+.main-column {
+  flex: 2;
+}
+
+.side-column {
+  flex: 1;
+}
+
+/* Section Styling */
+section {
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+/* Profile / About */
+.profile-text {
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+/* Experience Items */
+.job-item {
+  margin-bottom: 18px;
+  page-break-inside: avoid;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 4px;
+}
+
+.job-title {
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--primary-color);
+}
+
+.job-date {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+}
+
+.job-company {
+  font-weight: 500;
+  font-style: italic;
+  font-family: var(--font-serif);
+  color: var(--secondary-color);
+  margin-bottom: 6px;
+  font-size: 12px;
+}
+
+.job-desc {
+  margin-bottom: 6px;
+}
+
+.project-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.project-list li {
+  position: relative;
+  padding-left: 12px;
+  margin-bottom: 6px;
+  text-align: justify;
+}
+
+.project-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.project-title {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+/* Sidebar Styling */
+.skill-category {
+  margin-bottom: 15px;
+}
+
+.skill-category h3 {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.skill-tag {
+  background-color: var(--light-gray);
+  color: var(--primary-color);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 9px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: 1px solid var(--border-color);
+}
+
+.edu-item {
+  margin-bottom: 12px;
+}
+
+.edu-degree {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.edu-school {
+  font-style: italic;
+  font-family: var(--font-serif);
+  color: var(--secondary-color);
+  margin-bottom: 2px;
+}
+
+.edu-date {
+  font-size: 9px;
+  color: #777;
+  text-transform: uppercase;
+}
+
+.lang-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+  border-bottom: 1px dotted var(--border-color);
+  padding-bottom: 2px;
+}
+
+.lang-name {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.lang-level {
+  font-style: italic;
+  color: var(--secondary-color);
+}
+
+/* Link styling inside print */
+a[href] {
+  color: var(--primary-color);
+  text-decoration: none;
+}

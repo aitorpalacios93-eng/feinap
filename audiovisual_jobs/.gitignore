@@ -1,0 +1,15 @@
+.env
+venv/
+__pycache__/
+**/__pycache__/
+*.pyc
+
+# Sensitive runtime artifacts
+session_telegram.session*
+cookies/*.json
+
+# Logs and local outputs
+logs/*.log
+reports/
+test_output.json
+test_results_targeted.json
