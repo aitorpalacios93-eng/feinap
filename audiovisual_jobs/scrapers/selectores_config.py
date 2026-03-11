@@ -435,6 +435,16 @@ SELECTORES_CONFIG = {
         "method": "rss",
         "notas": "Blogger RSS - CONFIRMADO 200 XML. Castings Netflix, Madrid, Barcelona.",
     },
+    "www.clubdecreatividad.com": {
+        "rss": "https://www.clubdecreatividad.com/empleo/feed/",
+        "method": "rss",
+        "notas": "RSS Oficial Bolsa de Empleo Club de Creativos (c de c) - Motion/Video/Producción",
+    },
+    "produccionaudiovisual.com": {
+        "rss": "https://produccionaudiovisual.com/feed/",
+        "method": "rss",
+        "notas": "RSS Blog Sectorial Producción Audiovisual Española - Convocatorias y Empleo",
+    },
     # =====================================================
     # PORTALES PREMIUM PRODUCTOREAS / PLATAFORMAS
     # =====================================================
@@ -503,17 +513,6 @@ SELECTORES_CONFIG = {
         "url_busqueda": "https://the-dots.com/jobs/search?location=Spain",
         "method": "playwright_stealth",
         "notas": "Intermediaria creativa UK/Europa - requiere cuenta para ver detalles",
-    },
-    "www.clubdecreativos.com": {
-        "container": "article, .job-item, .oferta",
-        "title": "h2 a, h3 a",
-        "link": "a",
-        "company": ".company, .empresa",
-        "location": ".location",
-        "date": ".date, time",
-        "url_busqueda": "https://www.clubdecreativos.com/empleo/",
-        "method": "playwright",
-        "notas": "Club de Creativos España - publicidad, diseño y audiovisual",
     },
     "www.telefonicaserviciosaudiovisuales.com": {
         "container": "div.job, article, .vacancy",
@@ -611,6 +610,13 @@ SELECTORES_CONFIG = {
         "method": "playwright_stealth",
         "notas": "Indeed España. fromage=7 = últimos 7 días. Multiple queries por rol.",
     },
+    "www.platinoempleo.com": {
+        "method": "disabled",
+        "container": None,
+        "title": None,
+        "link": None,
+        "notas": "DESACTIVADO - Sistema de matchmaking privado. No tiene listado público de ofertas. Funciona creando cuenta como candidato y esperando invitaciones de empresas. URL candidatos: https://www.platinoempleo.com/PEmpleo_Candidatos.aspx",
+    },
 }
 
 # =====================================================
@@ -643,8 +649,10 @@ PORTALES_PRIORITARIOS = [
     # Especializados audiovisual/digital
     "jobs.mediapro.tv",      # Portal corporativo Mediapro
     "www.crew-united.com",   # Plataforma europea profesionales AV
-    "www.clubdecreativos.com",  # Club Creativos España
     "www.domestika.org",     # Comunidad creativa
+    "www.platinoempleo.com", # Portal Exclusivo Cine y Videojuegos
+    "www.clubdecreatividad.com", # RSS Bolsa de empleo C de C
+    "produccionaudiovisual.com", # RSS Noticias y empleo del sector
     # Empresas audiovisuales específicas
     "www.atresmediacorporacion.com",  # Atresmedia (Antena3/LaSexta)
     "gruposecuoya.es",               # Grupo Secuoya TV
