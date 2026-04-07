@@ -2,12 +2,11 @@ name: Audiovisual Jobs Scraper
 
 on:
   schedule:
-    # 4 ejecuciones diarias, todos los días (incluido fin de semana)
-    # Hora España (CEST UTC+2): 07h, 12h, 17h, 21h → UTC: 05h, 10h, 15h, 19h
-    - cron: '0 5 * * *'   # 07:00 España - Inicio de jornada
-    - cron: '0 10 * * *'  # 12:00 España - Mediodía
-    - cron: '0 15 * * *'  # 17:00 España - Final jornada laboral
-    - cron: '0 19 * * *'  # 21:00 España - LinkedIn y portales actualizan tarde
+    # 3 ejecuciones diarias (lunes-viernes)
+    # Hora España (CEST UTC+2): 10h, 14h, 18h → UTC: 8h, 12h, 16h
+    - cron: '0 8 * * *'   # 10:00 España - Mañana
+    - cron: '0 12 * * *'  # 14:00 España - Mediodía
+    - cron: '0 16 * * *'  # 18:00 España - Tarde
   workflow_dispatch:
     # Permite ejecución manual desde la interfaz de GitHub
 
