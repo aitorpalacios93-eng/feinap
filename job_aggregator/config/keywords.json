@@ -1,0 +1,37 @@
+{
+  "audiovisual": [
+    "editor video",
+    "operador camara",
+    "tecnico sonido",
+    "realizador audiovisual",
+    "produccion audiovisual",
+    "director fotografia",
+    "camarografo",
+    "videografo",
+    "postproduccion",
+    "montaje video"
+  ],
+  "creative_remote": [
+    "video editor",
+    "content creator",
+    "motion graphics",
+    "social media video"
+  ],
+  "n8n_automation": [
+    "n8n",
+    "automatizacion make",
+    "make.com workflow",
+    "zapier automation",
+    "automatizacion procesos"
+  ],
+  "ugc": [
+    "ugc creator",
+    "creador contenido ugc",
+    "ugc video"
+  ],
+  "virtual_assistant": [
+    "asistente virtual",
+    "virtual assistant",
+    "administrativo remoto"
+  ]
+}

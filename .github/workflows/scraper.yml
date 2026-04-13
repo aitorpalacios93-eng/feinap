@@ -1,63 +1,77 @@
-name: Audiovisual Jobs Scraper
+name: Job Aggregator v2
 
 on:
   schedule:
-    # 3 ejecuciones diarias (lunes-viernes)
-    # Hora España (CEST UTC+2): 10h, 14h, 18h → UTC: 8h, 12h, 16h
-    - cron: '0 8 * * *'   # 10:00 España - Mañana
-    - cron: '0 12 * * *'  # 14:00 España - Mediodía
-    - cron: '0 16 * * *'  # 18:00 España - Tarde
+    # 3 ejecuciones diarias — hora España (CEST UTC+2): 10h, 14h, 18h
+    - cron: '0 8 * * *'    # 10:00 España — mañana
+    - cron: '0 12 * * *'   # 14:00 España — mediodía
+    - cron: '0 16 * * *'   # 18:00 España — tarde
   workflow_dispatch:
-    # Permite ejecución manual desde la interfaz de GitHub
+    inputs:
+      max_days_old:
+        description: 'Máximo días antigüedad ofertas (default: 14)'
+        required: false
+        default: '14'
+      offers_per_portal:
+        description: 'Límite de ofertas por llamada (default: 25)'
+        required: false
+        default: '25'
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-    - name: Set up Python 3.11
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.11'
-        cache: 'pip'
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: job_aggregator/requirements.txt
 
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r audiovisual_jobs/requirements.txt
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r job_aggregator/requirements.txt
 
-    - name: Install Playwright Browsers
-      run: |
-        python -m playwright install chromium --with-deps
+      - name: Install Playwright browsers
+        run: python -m playwright install chromium --with-deps
 
-    - name: Run Scraper
-      env:
-        # Base de datos Supabase
-        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-        SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
-        SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
-        # IA - Groq para resúmenes
-        GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-        # Email alertas
-        SMTP_SERVER: "smtp.gmail.com"
-        SMTP_PORT: "587"
-        ALERT_EMAIL_FROM: ${{ secrets.ALERT_EMAIL_FROM }}
-        ALERT_EMAIL_PASSWORD: ${{ secrets.ALERT_EMAIL_PASSWORD }}
-        ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
-        # Configuración scraper
-        HEADLESS: "true"
-        MAX_REINTENTOS: "2"
-        TIMEOUT: "30000"
-        DELAY_MIN: "3"
-        DELAY_MAX: "7"
-        OFERTAS_POR_PORTAL: "30"
-        # Telegram (opcional)
-        TELEGRAM_API_ID: ${{ secrets.TELEGRAM_API_ID }}
-        TELEGRAM_API_HASH: ${{ secrets.TELEGRAM_API_HASH }}
-        TELEGRAM_CHANNELS: ${{ secrets.TELEGRAM_CHANNELS }}
-      run: |
-        cd audiovisual_jobs
-        python main.py
+      - name: Run Job Aggregator
+        env:
+          # ── Supabase (BD principal) ───────────────────────────────
+          SUPABASE_URL:          ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY:          ${{ secrets.SUPABASE_KEY }}
+          SUPABASE_SERVICE_KEY:  ${{ secrets.SUPABASE_SERVICE_KEY }}
+
+          # ── Opcionales: mejoran cobertura ─────────────────────────
+          JOOBLE_API_KEY:         ${{ secrets.JOOBLE_API_KEY }}
+          ADZUNA_APP_ID:          ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY:         ${{ secrets.ADZUNA_APP_KEY }}
+
+          # ── Notificaciones (ya configurados) ──────────────────────
+          GROQ_API_KEY:          ${{ secrets.GROQ_API_KEY }}
+          ALERT_EMAIL_FROM:      ${{ secrets.ALERT_EMAIL_FROM }}
+          ALERT_EMAIL_PASSWORD:  ${{ secrets.ALERT_EMAIL_PASSWORD }}
+          ALERT_EMAIL_TO:        ${{ secrets.ALERT_EMAIL_TO }}
+
+          # ── Comportamiento del scraper ─────────────────────────────
+          MAX_DAYS_OLD:          ${{ github.event.inputs.max_days_old || '14' }}
+          OFFERS_PER_PORTAL:     ${{ github.event.inputs.offers_per_portal || '25' }}
+          HEADLESS:              "true"
+
+        run: |
+          cd job_aggregator
+          python main.py
+
+      - name: Upload log artifact (si falla)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: scraper-log-${{ github.run_id }}
+          path: job_aggregator/*.log
+          retention-days: 7

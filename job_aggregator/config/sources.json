@@ -1,0 +1,63 @@
+{
+  "empleo_general_es": [
+    {"name": "InfoJobs", "url": "https://www.infojobs.net", "country": "ES", "type": "job_board", "scraper": "infojobs", "tier": 3},
+    {"name": "Infoempleo", "url": "https://www.infoempleo.com", "country": "ES", "type": "job_board", "scraper": "infoempleo", "tier": 2},
+    {"name": "Indeed España", "url": "https://es.indeed.com", "country": "ES", "type": "job_board", "scraper": "indeed", "tier": 3},
+    {"name": "LinkedIn Empleos", "url": "https://www.linkedin.com/jobs", "country": "GLOBAL", "type": "job_board", "scraper": "jooble_aggregated", "tier": 1, "note": "Cubierto vía Jooble API"},
+    {"name": "Empléate SEPE", "url": "https://www.empleate.gob.es", "country": "ES", "type": "job_board", "scraper": "jooble_aggregated", "tier": 1},
+    {"name": "Feina Activa (SOC Catalunya)", "url": "https://feinaactiva.gencat.cat", "country": "ES-CAT", "type": "public", "scraper": "feina_activa", "tier": 2},
+    {"name": "Barcelona Activa", "url": "https://www.barcelonactiva.cat", "country": "ES-CAT", "type": "public", "scraper": "jooble_aggregated", "tier": 1},
+    {"name": "Trabajos.com", "url": "https://www.trabajos.com", "country": "ES", "type": "job_board", "scraper": "jooble_aggregated", "tier": 1},
+    {"name": "Jobandtalent", "url": "https://jobandtalent.com", "country": "ES", "type": "job_board", "scraper": "jooble_aggregated", "tier": 1},
+    {"name": "Adzuna", "url": "https://www.adzuna.es", "country": "ES", "type": "job_board", "scraper": "adzuna_api", "tier": 1, "note": "Requiere ADZUNA_APP_ID y ADZUNA_APP_KEY en secrets"},
+    {"name": "Jobatus", "url": "https://www.jobatus.es", "country": "ES", "type": "job_board", "scraper": "jooble_aggregated", "tier": 1},
+    {"name": "Talent.com España", "url": "https://es.talent.com", "country": "ES", "type": "job_board", "scraper": "talent_com", "tier": 2},
+    {"name": "Monster España", "url": "https://www.monster.es", "country": "ES", "type": "job_board", "scraper": "disabled", "note": "403 Forbidden"},
+    {"name": "Jooble España", "url": "https://es.jooble.org", "country": "ES", "type": "aggregator", "scraper": "jooble_api", "tier": 1},
+    {"name": "Aquí Hay Trabajo RTVE", "url": "https://aquihaytrabajo.rtve.es", "country": "ES", "type": "job_board", "scraper": "jooble_aggregated", "tier": 1},
+    {"name": "Hacesfalta", "url": "https://www.hacesfalta.org", "country": "ES", "type": "job_board", "scraper": "hacesfalta", "tier": 2},
+    {"name": "Milanuncios Empleo", "url": "https://www.milanuncios.com/ofertas-de-empleo", "country": "ES", "type": "classifieds", "scraper": "milanuncios", "tier": 2},
+    {"name": "RemotoJOB", "url": "https://www.remotojob.es", "country": "ES", "type": "remote", "scraper": "remotojob", "tier": 2}
+  ],
+  "empleo_sectorial_creativo_audiovisual": [
+    {"name": "Domestika Jobs", "url": "https://www.domestika.org/es/jobs", "country": "GLOBAL", "type": "creative", "scraper": "domestika", "tier": 2},
+    {"name": "Tecnoempleo", "url": "https://www.tecnoempleo.com", "country": "ES", "type": "it", "scraper": "tecnoempleo", "tier": 2},
+    {"name": "Ticjob", "url": "https://www.ticjob.es", "country": "ES", "type": "it", "scraper": "ticjob", "tier": 2},
+    {"name": "JobFluent", "url": "https://jobfluent.com", "country": "ES", "type": "startup", "scraper": "jobfluent", "tier": 2},
+    {"name": "Shakers", "url": "https://www.shakersworks.com", "country": "ES", "type": "freelance_tech", "scraper": "shakers", "tier": 2}
+  ],
+  "remoto_internacional": [
+    {"name": "Jobspresso", "url": "https://jobspresso.co", "country": "GLOBAL", "type": "remote", "scraper": "rss_jobspresso", "tier": 1},
+    {"name": "Remote.co", "url": "https://remote.co/remote-jobs", "country": "GLOBAL", "type": "remote", "scraper": "rss_remoteco", "tier": 1},
+    {"name": "RemoteOK", "url": "https://remoteok.com", "country": "GLOBAL", "type": "remote", "scraper": "remoteok_api", "tier": 1},
+    {"name": "Working Nomads", "url": "https://www.workingnomads.com", "country": "GLOBAL", "type": "remote", "scraper": "rss_workingnomads", "tier": 1},
+    {"name": "Wellfound (AngelList)", "url": "https://wellfound.com", "country": "GLOBAL", "type": "startup", "scraper": "wellfound", "tier": 2},
+    {"name": "EURES", "url": "https://eures.ec.europa.eu", "country": "EU", "type": "public", "scraper": "jooble_aggregated", "tier": 1},
+    {"name": "Glassdoor Jobs", "url": "https://www.glassdoor.com/Job", "country": "GLOBAL", "type": "job_board", "scraper": "disabled", "note": "Requiere login"}
+  ],
+  "freelance_multiservicio": [
+    {"name": "Malt", "url": "https://www.malt.es", "country": "EU", "type": "freelance", "scraper": "malt_es", "tier": 2},
+    {"name": "Workana", "url": "https://www.workana.com", "country": "LATAM+ES", "type": "freelance", "scraper": "workana", "tier": 2},
+    {"name": "Freelancer.es", "url": "https://www.freelancer.es", "country": "GLOBAL", "type": "freelance", "scraper": "freelancer_es", "tier": 2},
+    {"name": "Upwork", "url": "https://www.upwork.com", "country": "GLOBAL", "type": "freelance", "scraper": "disabled", "note": "Anti-bot agresivo"},
+    {"name": "PeoplePerHour", "url": "https://www.peopleperhour.com", "country": "GLOBAL", "type": "freelance", "scraper": "peopleperhour", "tier": 2},
+    {"name": "SoyFreelancer", "url": "https://www.soyfreelancer.com", "country": "ES+LATAM", "type": "freelance", "scraper": "soyfreelancer", "tier": 2},
+    {"name": "Twago", "url": "https://www.twago.es", "country": "EU", "type": "freelance", "scraper": "jooble_aggregated", "tier": 1}
+  ],
+  "ugc_creadores": [
+    {"name": "Influee", "url": "https://influee.co/es", "country": "ES", "type": "ugc_platform", "scraper": "disabled", "note": "Requiere perfil de creador"},
+    {"name": "Fiverr UGC", "url": "https://www.fiverr.com/categories/video-animation/ugc-videos", "country": "GLOBAL", "type": "ugc_market", "scraper": "disabled", "note": "Marketplace, no scrappable directamente"}
+  ],
+  "automation_n8n_ai": [
+    {"name": "Shakers (automation)", "url": "https://www.shakersworks.com", "country": "ES", "type": "freelance_tech", "scraper": "shakers", "tier": 2},
+    {"name": "Malt (automation)", "url": "https://www.malt.es", "country": "EU", "type": "freelance_tech", "scraper": "malt_es", "tier": 2},
+    {"name": "Workana (automation)", "url": "https://www.workana.com", "country": "LATAM+ES", "type": "freelance_tech", "scraper": "workana", "tier": 2}
+  ],
+  "assistant_virtual": [
+    {"name": "Workana VA", "url": "https://www.workana.com", "country": "LATAM+ES", "type": "freelance", "scraper": "workana", "tier": 2},
+    {"name": "Freelancer VA", "url": "https://www.freelancer.es", "country": "GLOBAL", "type": "freelance", "scraper": "freelancer_es", "tier": 2},
+    {"name": "PeoplePerHour VA", "url": "https://www.peopleperhour.com", "country": "GLOBAL", "type": "freelance", "scraper": "peopleperhour", "tier": 2},
+    {"name": "Hubstaff Talent", "url": "https://talent.hubstaff.com", "country": "GLOBAL", "type": "remote_talent", "scraper": "disabled", "note": "Requiere registro"},
+    {"name": "Virtual Latinos", "url": "https://www.virtuallatinos.com", "country": "LATAM", "type": "va_agency", "scraper": "disabled", "note": "LATAM únicamente"}
+  ]
+}

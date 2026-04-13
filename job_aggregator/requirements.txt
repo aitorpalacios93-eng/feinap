@@ -1,3 +1,13 @@
+# HTTP + HTML parsing
 requests>=2.31.0
 beautifulsoup4>=4.12.0
+lxml>=5.0.0
+
+# Browser automation (Tier 3)
 playwright>=1.40.0
+
+# RSS / Atom feeds (Tier 1)
+feedparser>=6.0.0
+
+# Supabase (BD principal en GitHub Actions)
+supabase>=2.3.0

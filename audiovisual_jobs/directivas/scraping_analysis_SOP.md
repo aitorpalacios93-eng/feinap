@@ -93,3 +93,46 @@ Fuente: `produccionaudiovisual.com` (authoritative del sector español):
 - **Ahora**: 4 crons diarios (5h, 10h, 15h, 19h UTC = 7h, 12h, 17h, 21h España), todos los días
 - Eliminado el step de `Deploy to Cloudflare Pages` (el directorio `public/` ya no existe)
 - Añadida variable de entorno `SUPABASE_SERVICE_KEY`
+
+## 8. Sistema de Enriquecimiento de Descripciones - 2026-04-03
+
+### Arquitectura de Extracción
+El sistema ahora tiene **dos fases**:
+1. **Fase 1 - Scraping de Listados**: Extrae títulos, empresas, ubicaciones, enlaces
+2. **Fase 2 - Enriquecimiento de Descripciones**: Visita cada URL y extrae descripción completa
+
+### Nuevos archivos
+- `scrapers/description_scraper.py`: Scraper dedicado a extraer descripciones de páginas individuales
+- `scripts/test_enrichment.py`: Script de prueba para verificar el enrichment
+
+### Configuración (.env)
+```bash
+ENRICH_DESCRIPTIONS=true          # Activar/desactivar enrichment
+ENRICH_MAX_CONCURRENT=3          # Conexiones simultáneas
+ENRICH_TIMEOUT=20000              # Timeout en ms
+```
+
+### Selectores de Descripción por Portal
+El sistema usa selectores específicos para cada portal:
+- **InfoJobs**: `div[data-testid='job-description-body']`, `.job-description`
+- **Indeed**: `div#jobDescriptionText`, `div[data-testid='job-description']`
+- **LinkedIn**: `div.description__text`, `div.show-more-less-html`
+- **Domestika**: `div.job-description`, `.job-detail-description`
+- **Generic**: Lista de selectores comunes para portales desconocidos
+
+### Flujo de Datos Mejorado
+```
+Listado → Scraping Inicial → [¿Enrich activado?] 
+                                     ↓
+                              Visita URLs individuales
+                                     ↓
+                              Extrae descripción completa
+                                     ↓
+                              Normalización → DB → Email
+```
+
+### Emails Mejorados
+Los emails ahora muestran:
+- Descripción completa (hasta 400 caracteres)
+- Salario si está disponible
+- Mejor formato visual con borde izquierdo
