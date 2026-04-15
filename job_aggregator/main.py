@@ -444,7 +444,7 @@ def _send_email_notification(jobs: List, stats: dict, ai_result: dict = None):
             top_offers = ai_result.get("top_offers", jobs[:5])
             ai_summary = ai_result.get("summary", "")
             ai_failed = ai_result.get("failed", True)
-            groups = _group_jobs_by_category(jobs[:40])
+            groups = _group_jobs_by_category(jobs)
 
             subject = f"FeinaAP: {len(jobs)} nuevas ofertas — {today[:5]}"
 
@@ -473,12 +473,12 @@ def _send_email_notification(jobs: List, stats: dict, ai_result: dict = None):
                 cat_jobs = groups.get(cat_key, [])
                 if not cat_jobs:
                     continue
-                cards = "".join(_job_card_html(j) for j in cat_jobs[:10])
+                cards = "".join(_job_card_html(j) for j in cat_jobs)
                 category_sections += f"""
 <h3 style="color:#1a1a2e;border-bottom:2px solid #eee;padding-bottom:6px;margin-top:28px">{cat_label} ({len(cat_jobs)})</h3>
 {cards}"""
 
-            more_text = f'<p style="color:#999;font-size:13px;text-align:center">... y {len(jobs) - 40} ofertas más en Supabase</p>' if len(jobs) > 40 else ""
+            more_text = ""
 
             html_body = f"""
 <html><body style="font-family:Arial,sans-serif;max-width:680px;margin:auto;color:#222;line-height:1.5">
