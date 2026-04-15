@@ -11,3 +11,6 @@ feedparser>=6.0.0
 
 # Supabase (BD principal en GitHub Actions)
 supabase>=2.3.0
+
+# IA — segunda capa validación (Groq)
+groq>=0.9.0

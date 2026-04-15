@@ -52,6 +52,7 @@ KW_CREAT = KW["creative_remote"]  # Video editor remoto
 KW_N8N = KW["n8n_automation"]  # n8n / automatización
 KW_UGC = KW["ugc"]  # UGC creator
 KW_VA = KW["virtual_assistant"]  # Asistente virtual
+KW_MKT = KW["marketing"]  # Marketing digital
 
 
 # ── DB ─────────────────────────────────────────────────────────────────────────
@@ -158,17 +159,21 @@ def main() -> int:
         scraper = scraper_fn()
         all_jobs += run(scraper.name, scraper.get_jobs, limit=LIMIT)
 
-    # Jooble API — solo las keywords principales
+    # Jooble API — audiovisual + marketing (Barcelona y remoto)
     jooble = JoobleAPI()
-    jooble_kws = KW_AV[:2]  # Solo 2 keywords
-    for kw in jooble_kws:
+    for kw in KW_AV[:2]:
         all_jobs += run("Jooble", jooble.search, kw, location="España", limit=20)
+    for kw in KW_MKT[:3]:
+        all_jobs += run("Jooble-MKT", jooble.search, kw, location="Barcelona", limit=20)
+        all_jobs += run("Jooble-MKT-Remote", jooble.search, kw, location="Remote", limit=20)
 
     # Adzuna API (opcional, necesita secrets ADZUNA_APP_ID + ADZUNA_APP_KEY)
     if os.environ.get("ADZUNA_APP_ID"):
         adzuna = AdzunaScraper()
         for kw in KW_AV[:4]:
             all_jobs += run("Adzuna", adzuna.search, kw, limit=20)
+        for kw in KW_MKT[:3]:
+            all_jobs += run("Adzuna-MKT", adzuna.search, kw, limit=20)
 
     # ══════════════════════════════════════════════════════════════
     # TIER 2: HTML + requests — sin browser
@@ -200,30 +205,38 @@ def main() -> int:
         SoyFreelancerScraper,
     )
 
-    # Tecnoempleo — IT + audiovisual Spain
+    # Tecnoempleo — IT + audiovisual + marketing Spain
     tecno = TecnoempleoScraper()
     for kw in ["audiovisual", "video"]:
         all_jobs += run("Tecnoempleo", tecno.search, kw, limit=LIMIT)
+    for kw in KW_MKT[:2]:
+        all_jobs += run("Tecnoempleo-MKT", tecno.search, kw, limit=LIMIT)
 
     # Domestika Jobs — solo 1 búsqueda
     all_jobs += run("Domestika", DomestikaScraper().search, "video", limit=LIMIT)
 
-    # Infoempleo — solo 1 keyword
+    # Infoempleo — audiovisual + marketing
     ie = InfoempleoScraper()
     for kw in KW_AV[:1]:
         all_jobs += run("Infoempleo", ie.search, kw, limit=LIMIT)
+    for kw in KW_MKT[:2]:
+        all_jobs += run("Infoempleo-MKT", ie.search, kw, limit=LIMIT)
 
-    # Talent.com — solo 1
+    # Talent.com — audiovisual + marketing
     for kw in KW_AV[:1]:
         all_jobs += run("Talent.com", TalentComScraper().search, kw, limit=LIMIT)
+    for kw in KW_MKT[:2]:
+        all_jobs += run("Talent.com-MKT", TalentComScraper().search, kw, limit=LIMIT)
 
     # TicJob — solo 1
     all_jobs += run("TicJob", TicjobScraper().search, "video", limit=LIMIT)
 
-    # Feina Activa — solo 1
+    # Feina Activa — audiovisual + marketing (Barcelona/Catalunya)
     all_jobs += run(
         "FeineActiva", FeineActivaScraper().search, "audiovisual", limit=LIMIT
     )
+    for kw in KW_MKT[:2]:
+        all_jobs += run("FeineActiva-MKT", FeineActivaScraper().search, kw, limit=LIMIT)
 
     # ProductionHub — solo 1
     all_jobs += run(
@@ -234,6 +247,8 @@ def main() -> int:
     malt = MaltEsScraper()
     for kw in ["editor video", "n8n"]:
         all_jobs += run("Malt.es", malt.search, kw, limit=LIMIT)
+    for kw in ["marketing digital", "community manager"]:
+        all_jobs += run("Malt.es-MKT", malt.search, kw, limit=LIMIT)
 
     # ══════════════════════════════════════════════════════════════
     # TIER 3: Playwright — anti-bot portals
@@ -248,10 +263,22 @@ def main() -> int:
         all_jobs += run(
             "InfoJobs", infojobs.search, kw, location="barcelona", limit=LIMIT
         )
+        all_jobs += run(
+            "InfoJobs-Remote", infojobs.search, kw, location="remoto", limit=LIMIT
+        )
+    for kw in KW_MKT[:2]:
+        all_jobs += run(
+            "InfoJobs-MKT", infojobs.search, kw, location="barcelona", limit=LIMIT
+        )
+        all_jobs += run(
+            "InfoJobs-MKT-Remote", infojobs.search, kw, location="remoto", limit=LIMIT
+        )
 
     indeed = IndeedScraper()
     for kw in KW_AV[:1]:
         all_jobs += run("Indeed", indeed.search, kw, location="España", limit=LIMIT)
+    for kw in KW_MKT[:1]:
+        all_jobs += run("Indeed-MKT", indeed.search, kw, location="Barcelona", limit=LIMIT)
 
     # ══════════════════════════════════════════════════════════════
     # FILTRO + DEDUPLICACIÓN
@@ -304,15 +331,85 @@ def main() -> int:
     log.info(f"=== FIN: {stats} ===")
 
     # ══════════════════════════════════════════════════════════════
+    # SEGUNDA CAPA: Validación + resumen con Groq IA
+    # ══════════════════════════════════════════════════════════════
+    log.info("── Validación IA (Groq) ──")
+    ai_result = {"top_offers": unique[:5], "summary": "", "validated_jobs": unique, "failed": True}
+    try:
+        from validators.groq_validator import validate_and_summarize
+        ai_result = validate_and_summarize(unique)
+    except Exception as exc:
+        log.warning(f"Groq validator error: {exc}")
+
+    # ══════════════════════════════════════════════════════════════
     # ENVIAR EMAIL DE NOTIFICACIÓN
     # ══════════════════════════════════════════════════════════════
-    _send_email_notification(unique, stats)
+    _send_email_notification(unique, stats, ai_result)
 
     return 0
 
 
-def _send_email_notification(jobs: List, stats: dict):
-    """Envía email con las nuevas ofertas."""
+def _job_card_html(j, highlight: bool = False) -> str:
+    """Genera el HTML de una tarjeta de oferta."""
+    border_color = "#e63946" if highlight else "#4a90d9"
+    relevance = getattr(j, "_ai_relevance", "")
+    salary = getattr(j, "_ai_salary", None)
+    contract = getattr(j, "_ai_contract", "")
+    ai_summary = getattr(j, "_ai_summary", "")
+    requirements = getattr(j, "_ai_requirements", [])
+
+    extras = ""
+    if contract and contract != "desconocido":
+        extras += f'<span style="background:#f0f4ff;color:#4a90d9;padding:2px 8px;border-radius:12px;font-size:12px;margin-right:6px">{contract}</span>'
+    if salary:
+        extras += f'<span style="background:#f0fff4;color:#38a169;padding:2px 8px;border-radius:12px;font-size:12px;margin-right:6px">{salary}</span>'
+    if relevance == "alta":
+        extras += '<span style="background:#fff5f5;color:#e63946;padding:2px 8px;border-radius:12px;font-size:12px">★ Relevante</span>'
+
+    req_html = ""
+    if requirements:
+        req_items = "".join(f"<li>{r}</li>" for r in requirements[:4])
+        req_html = f'<ul style="margin:6px 0 0 0;padding-left:18px;font-size:13px;color:#555">{req_items}</ul>'
+
+    summary_html = f'<p style="margin:6px 0 0 0;font-size:13px;color:#444;font-style:italic">{ai_summary}</p>' if ai_summary else ""
+
+    return f"""
+<div style="border-left:4px solid {border_color};padding:12px 16px;margin-bottom:12px;background:#fafafa;border-radius:0 6px 6px 0">
+  <a href="{j.url or '#'}" style="font-size:16px;font-weight:bold;color:#1a1a2e;text-decoration:none">{j.title or 'Sin título'}</a>
+  <div style="margin-top:4px;font-size:13px;color:#666">
+    <strong>{j.company or 'Empresa desconocida'}</strong>
+    {' · ' + (j.location or '') if j.location else ''}
+    {' · ' + str(j.source or '') if j.source else ''}
+    {' · ' + str(j.date_posted or '') if j.date_posted else ''}
+  </div>
+  <div style="margin-top:8px">{extras}</div>
+  {summary_html}
+  {req_html}
+</div>"""
+
+
+def _group_jobs_by_category(jobs: List) -> dict:
+    """Agrupa ofertas por categoría según source/keywords."""
+    groups = {"audiovisual": [], "marketing": [], "freelance": [], "remoto": [], "otros": []}
+    for j in jobs:
+        src = (getattr(j, "source", "") or "").lower()
+        title = (getattr(j, "title", "") or "").lower()
+        loc = (getattr(j, "location", "") or "").lower()
+        if any(x in src for x in ["malt", "workana", "freelancer", "peopleperhour", "soyfreelancer"]):
+            groups["freelance"].append(j)
+        elif any(x in src for x in ["remoteok", "workingnomads", "jobspresso", "remoteco", "weremoto", "remoto"]) or "remot" in loc:
+            groups["remoto"].append(j)
+        elif any(x in title for x in ["marketing", "community", "seo", "social media", "content", "brand", "paid"]):
+            groups["marketing"].append(j)
+        elif any(x in title for x in ["video", "audio", "camara", "foto", "produccion", "montaje", "editor", "realizador"]):
+            groups["audiovisual"].append(j)
+        else:
+            groups["otros"].append(j)
+    return groups
+
+
+def _send_email_notification(jobs: List, stats: dict, ai_result: dict = None):
+    """Envía email HTML con las nuevas ofertas y resumen IA."""
     from_email = os.environ.get("ALERT_EMAIL_FROM")
     from_password = os.environ.get("ALERT_EMAIL_PASSWORD")
     to_email = os.environ.get("ALERT_EMAIL_TO", "aitorpalacios93@gmail.com")
@@ -323,39 +420,100 @@ def _send_email_notification(jobs: List, stats: dict):
         log.warning("Email no configurado: ALERT_EMAIL_FROM/PASSWORD no definidos")
         return
 
+    if ai_result is None:
+        ai_result = {"top_offers": jobs[:5], "summary": "", "validated_jobs": jobs, "failed": True}
+
     try:
-        # Construir cuerpo del email
+        today = datetime.utcnow().strftime("%d/%m/%Y %H:%M UTC")
+
         if not jobs:
             subject = "FeinaAP: No hay nuevas ofertas"
-            body = f"""Hola,
-
-No se han encontrado nuevas ofertas de empleo en esta ejecución.
-
----
-Stats: {stats}
-"""
+            html_body = f"""
+<html><body style="font-family:Arial,sans-serif;max-width:680px;margin:auto;color:#222">
+  <div style="background:#1a1a2e;color:white;padding:20px 24px;border-radius:8px 8px 0 0">
+    <h1 style="margin:0;font-size:22px">FeinaAP</h1>
+    <p style="margin:4px 0 0 0;opacity:0.8">{today}</p>
+  </div>
+  <div style="padding:24px;border:1px solid #eee;border-top:none;border-radius:0 0 8px 8px">
+    <p>No se han encontrado nuevas ofertas en esta ejecución.</p>
+    <p style="font-size:12px;color:#999">Stats: {stats}</p>
+  </div>
+</body></html>"""
+            plain_body = f"FeinaAP {today}\nNo hay nuevas ofertas.\nStats: {stats}"
         else:
-            jobs_limited = jobs[:30]  # Máximo 30 ofertas en el email
-            jobs_list = "\n\n".join(
-                f"🎬 **{j.title}**\n{j.company or 'Empresa desconocida'}\n📍 {j.location or 'Sin ubicación'}\n🔗 {j.url}"
-                for j in jobs_limited
-            )
-            more = f"\n... y {len(jobs) - 30} más" if len(jobs) > 30 else ""
-            subject = f"FeinaAP: {len(jobs)} nuevas ofertas de empleo"
-            body = f"""Hola,
+            top_offers = ai_result.get("top_offers", jobs[:5])
+            ai_summary = ai_result.get("summary", "")
+            ai_failed = ai_result.get("failed", True)
+            groups = _group_jobs_by_category(jobs[:40])
 
-Se han encontrado **{len(jobs)}** nuevas ofertas de empleo:{jobs_list}{more}
+            subject = f"FeinaAP: {len(jobs)} nuevas ofertas — {today[:5]}"
 
----
-Stats: {stats}
-"""
+            # Cabecera
+            summary_block = ""
+            if ai_summary and not ai_failed:
+                summary_block = f"""
+<div style="background:#f0f7ff;border-left:4px solid #4a90d9;padding:14px 18px;margin-bottom:20px;border-radius:0 6px 6px 0">
+  <strong style="color:#4a90d9">Resumen del mercado laboral (IA)</strong>
+  <p style="margin:8px 0 0 0;color:#333;font-size:14px">{ai_summary}</p>
+</div>"""
+
+            # Top ofertas
+            top_cards = "".join(_job_card_html(j, highlight=True) for j in top_offers[:3])
+
+            # Ofertas por categoría
+            category_sections = ""
+            category_names = {
+                "audiovisual": "Audiovisual",
+                "marketing": "Marketing",
+                "freelance": "Freelance",
+                "remoto": "Remoto / Internacional",
+                "otros": "Otros",
+            }
+            for cat_key, cat_label in category_names.items():
+                cat_jobs = groups.get(cat_key, [])
+                if not cat_jobs:
+                    continue
+                cards = "".join(_job_card_html(j) for j in cat_jobs[:10])
+                category_sections += f"""
+<h3 style="color:#1a1a2e;border-bottom:2px solid #eee;padding-bottom:6px;margin-top:28px">{cat_label} ({len(cat_jobs)})</h3>
+{cards}"""
+
+            more_text = f'<p style="color:#999;font-size:13px;text-align:center">... y {len(jobs) - 40} ofertas más en Supabase</p>' if len(jobs) > 40 else ""
+
+            html_body = f"""
+<html><body style="font-family:Arial,sans-serif;max-width:680px;margin:auto;color:#222;line-height:1.5">
+  <div style="background:#1a1a2e;color:white;padding:20px 24px;border-radius:8px 8px 0 0">
+    <h1 style="margin:0;font-size:22px">FeinaAP</h1>
+    <p style="margin:4px 0 0 0;opacity:0.8">{today} · <strong>{len(jobs)} nuevas ofertas</strong></p>
+  </div>
+  <div style="padding:24px;border:1px solid #eee;border-top:none;border-radius:0 0 8px 8px">
+    {summary_block}
+    <h2 style="color:#e63946;margin-top:0">Top ofertas destacadas</h2>
+    {top_cards}
+    {category_sections}
+    {more_text}
+    <hr style="border:none;border-top:1px solid #eee;margin:24px 0">
+    <p style="font-size:11px;color:#aaa">Stats: scraped={stats.get('total_scraped',0)} · filtradas={stats.get('after_date_filter',0)} · únicas={stats.get('unique_urls',0)} · guardadas={stats.get('saved_new',0)} · {stats.get('elapsed_s',0)}s · IA={'OK' if not ai_failed else 'sin Groq'}</p>
+  </div>
+</body></html>"""
+
+            # Fallback texto plano
+            plain_lines = [f"FeinaAP — {today} — {len(jobs)} nuevas ofertas"]
+            if ai_summary:
+                plain_lines += ["", "RESUMEN IA:", ai_summary]
+            plain_lines += ["", "TOP OFERTAS:"]
+            for j in top_offers[:3]:
+                plain_lines.append(f"- {j.title} | {j.company or ''} | {j.url}")
+            plain_lines += ["", f"Stats: {stats}"]
+            plain_body = "\n".join(plain_lines)
 
         # Enviar
-        msg = MIMEMultipart()
+        msg = MIMEMultipart("alternative")
         msg["From"] = from_email
         msg["To"] = to_email
         msg["Subject"] = subject
-        msg.attach(MIMEText(body, "plain"))
+        msg.attach(MIMEText(plain_body, "plain"))
+        msg.attach(MIMEText(html_body, "html"))
 
         server = smtplib.SMTP("smtp.gmail.com", 587)
         server.starttls()
